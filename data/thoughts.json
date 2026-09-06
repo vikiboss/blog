@@ -1,5 +1,13 @@
 [
   {
+    "id": "206",
+    "date": "2026-09-06T19:39:23+08:00",
+    "content": "不同的灵魂，相同的胃口（都没吃完 🤷",
+    "images": [
+      "https://image.viki.moe/blog/viki/d4d83a.jpeg"
+    ]
+  },
+  {
     "id": "205",
     "date": "2026-09-04T15:36:27+08:00",
     "content": "文档画中画（Document Picture-in-Picture），可以将任意的 HTML 放入画中画窗口，相比于传统仅限视频的画中画有了更多可能。比如：自定义的画中画播放器、网页小组件、悬浮面板和小工具等。目前仅 Chrome 和 Firefox 桌面版支持。详情参考 https://developer.mozilla.org/zh-CN/docs/Web/API/DocumentPictureInPicture\n\n```ts\n// 视频画中画\nHTMLVideoElement.requestPictureInPicture(...)\n\n// 文档画中画\nconst pipWindow = await documentPictureInPicture.requestWindow(...)\npipWindow.document // ... 操作弹出窗口的 DOM，比如 添加元素、CSS 等\n```"
