@@ -69,7 +69,7 @@
         {
           "name": "R2 Web",
           "url": "https://github.com/vikiboss/r2-web",
-          "stars": "400+",
+          "stars": "450+",
           "description": "Cloudflare R2 Web 端，支持浏览、上传和管理",
           "status": "active",
           "homepage": "https://r2.viki.moe/"
@@ -122,7 +122,7 @@
           "url": "https://github.com/vikiboss/60s",
           "description": "每天 60 秒新闻资讯、各种数据 API 聚合服务",
           "status": "active",
-          "stars": "5.5K+",
+          "stars": "5.7K+",
           "homepage": "https://docs.60s-api.viki.moe/"
         }
       ],
