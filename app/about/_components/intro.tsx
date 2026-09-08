@@ -12,7 +12,7 @@ export async function AboutIntro({ title, paragraphs, id }: AboutIntroProps) {
     <section className="space-y-4">
       <h1 className="flex items-center gap-3 text-3xl font-bold sm:text-4xl" id={id}>
         <Image
-          className="inline-block rounded-full align-middle"
+          className="round-cobblestone inline-block rounded-full align-middle"
           src="/avatar.png"
           alt="头像"
           width={48}
