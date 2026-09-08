@@ -184,5 +184,13 @@
     "description": "记录文章、笔记、实验和暂时不想丢掉的内容。",
     "avatar": "https://miuo.me/avatar.avif",
     "rss": "https://miuo.me/rss.xml"
+  },
+  {
+    "id": "yuexiabug",
+    "name": "YUEXIABUG",
+    "url": "https://yxbug.ren",
+    "description": "愿指引明路的苍蓝星为你闪耀",
+    "avatar": "https://bu.dusays.com/2025/09/08/68be367856ad1.jpg",
+    "rss": "https://yxbug.ren/atom.xml"
   }
 ]
