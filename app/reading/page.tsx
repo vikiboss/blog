@@ -84,71 +84,74 @@ export default async function ReadingDetailPage() {
         }}
       />
       <div className={cn('mx-auto max-w-3xl px-2 py-12 sm:px-6')}>
-      {/* 日期标题 - 文艺布局 */}
-      <header className="relative mb-8 sm:mb-12">
-        <div className="mb-6 flex items-center justify-between gap-2 text-sm italic opacity-60 sm:mb-8 sm:text-base">
-          岛读：每日一篇名家短文
-          <RefreshButton />
-        </div>
-        <div className="flex items-start justify-between gap-8">
-          {/* 左侧：日期信息 */}
-          <div className="flex items-end gap-4 sm:gap-6">
-            {/* 大数字 */}
-            <div className="text-7xl leading-none font-medium tracking-widest sm:text-9xl">
-              {day}
-            </div>
-
-            {/* 右侧：阳历和农历 */}
-            <div className="flex flex-col justify-center space-y-2">
-              {/* 农历 */}
-              <div className="text-xs opacity-50 sm:text-sm">
-                农历 {lunar.month}月{lunar.day}
+        {/* 日期标题 - 文艺布局 */}
+        <header className="relative mb-8 sm:mb-12">
+          <div className="mb-6 flex items-center justify-between gap-2 text-sm italic opacity-60 sm:mb-8 sm:text-base">
+            岛读：每日一篇名家短文
+            <RefreshButton />
+          </div>
+          <div className="flex items-start justify-between gap-8">
+            {/* 左侧：日期信息 */}
+            <div className="flex items-end gap-4 sm:gap-6">
+              {/* 大数字 */}
+              <div className="text-7xl leading-none font-medium tracking-widest sm:text-9xl">
+                {day}
               </div>
 
-              {/* 节日 */}
-              {lunar.festival && (
-                <div className="text-xs opacity-75 sm:text-sm">{lunar.festival}</div>
-              )}
+              {/* 右侧：阳历和农历 */}
+              <div className="flex flex-col justify-center space-y-2">
+                {/* 农历 */}
+                <div className="text-xs opacity-50 sm:text-sm">
+                  农历 {lunar.month}月{lunar.day}
+                </div>
 
-              {/* 阳历 */}
-              <div className="text-sm opacity-75 sm:text-lg">
-                {yearMonth}，星期
-                {['日', '一', '二', '三', '四', '五', '六'][readingDate.getDay()]}
+                {/* 节日 */}
+                {lunar.festival && (
+                  <div className="text-xs opacity-75 sm:text-sm">{lunar.festival}</div>
+                )}
+
+                {/* 阳历 */}
+                <div className="text-sm opacity-75 sm:text-lg">
+                  {yearMonth}，星期
+                  {['日', '一', '二', '三', '四', '五', '六'][readingDate.getDay()]}
+                </div>
+              </div>
+            </div>
+
+            {/* 右侧：竖向 tip */}
+            <div className="flex items-start">
+              <div
+                style={{ textCombineUpright: 'all' }} // 竖向排布文本优化，允许短文本横向排列
+                className="text-sm tracking-widest [writing-mode:vertical-rl] sm:text-base"
+              >
+                {reading.tip}
               </div>
             </div>
           </div>
+        </header>
 
-          {/* 右侧：竖向 tip */}
-          <div className="flex items-start">
-            <div className="text-sm tracking-widest [writing-mode:vertical-rl] sm:text-base">
-              {reading.tip}
-            </div>
+        {/* 文章正文 */}
+        <article className="mb-12 text-lg leading-relaxed">
+          <div className="break-all whitespace-pre-line">
+            {reading.content.trim().replaceAll('\n\n', '\n').replaceAll('\n', '\n\n')}
           </div>
+        </article>
+
+        {/* 作品信息 - 低调展示在正文后 */}
+        <div className="mb-8 text-center sm:mb-16">
+          <p className="mb-2 text-base opacity-50 sm:text-lg">{reading.name_formatted}</p>
+          <p className="text-sm opacity-40">{reading.author}</p>
         </div>
-      </header>
 
-      {/* 文章正文 */}
-      <article className="mb-12 text-lg leading-relaxed">
-        <div className="break-all whitespace-pre-line">
-          {reading.content.trim().replaceAll('\n\n', '\n').replaceAll('\n', '\n\n')}
+        {/* 互动数据 */}
+        <div className="border-border mb-12 flex items-center justify-center gap-8 border-y py-6 text-sm opacity-60">
+          {reading.like_count > 0 && <span>{reading.like_count} 喜欢</span>}
+          {reading.comment_count > 0 && <span>{reading.comment_count} 评论</span>}
         </div>
-      </article>
 
-      {/* 作品信息 - 低调展示在正文后 */}
-      <div className="mb-8 text-center sm:mb-16">
-        <p className="mb-2 text-base opacity-50 sm:text-lg">{reading.name_formatted}</p>
-        <p className="text-sm opacity-40">{reading.author}</p>
+        {/* 评论区 */}
+        <ReadingComments comments={reading.comments} />
       </div>
-
-      {/* 互动数据 */}
-      <div className="border-border mb-12 flex items-center justify-center gap-8 border-y py-6 text-sm opacity-60">
-        {reading.like_count > 0 && <span>{reading.like_count} 喜欢</span>}
-        {reading.comment_count > 0 && <span>{reading.comment_count} 评论</span>}
-      </div>
-
-      {/* 评论区 */}
-      <ReadingComments comments={reading.comments} />
-    </div>
     </>
   )
 }
