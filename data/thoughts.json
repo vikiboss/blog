@@ -1,5 +1,10 @@
 [
   {
+    "id": "208",
+    "date": "2026-09-08T11:52:52+08:00",
+    "content": "希望我不是第一个知道在网页链接处按鼠标中间可以在后台打开新标签页，类似于按住 Ctrl/Command 再鼠标左键打开链接的效果。"
+  },
+  {
     "id": "207",
     "date": "2026-09-08T11:08:19+08:00",
     "content": "React 又加了一个新的 API，[browser()](https://react.dev/reference/react-dom/browser)，因为特定于浏览器，就放在了 react-dom 包里，搭配 use 以 `use(browser(reason?))` 的方式来使用。在功能和用法命名上有点像细粒度、通用版本的 'use client'。\n\n优势在于可以在渲染期间动态切换组件为仅浏览器渲染，且可以是有条件的（比如在 if 条件分支中调用，符合 use API 规则）。但目前存在使用限制，必须和 use 搭配使用，且使用到的组件必须被 `<Suspense>` 包裹。因为 `browser()` 的底层会抛出可恢复的 use 错误，然后被 React 内部捕获且有意抑制了，这样在 SSR 期间会被回退到 Suspense 的 fallback 组件，同时客户端又能够正常渲染，达到让组件仅在客户端环境渲染的目的。\n\n```tsx\nimport { use } from 'react';\nimport { browser } from 'react-dom';\n\nfunction BrowserOnly() {\n  use(browser('This component requires browser APIs.'));\n  return <BrowserContent />;\n}\n```"
