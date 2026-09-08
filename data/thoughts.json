@@ -1,5 +1,10 @@
 [
   {
+    "id": "207",
+    "date": "2026-09-08T11:08:19+08:00",
+    "content": "React 又加了一个新的 API，[browser()](https://react.dev/reference/react-dom/browser)，因为特定于浏览器，就放在了 React-dom 包里，通过搭配 use 以 `use(browser(reason?))` 的方式来使用。在功能和用法命名上有点像细粒度、通用版本的 `'use client';`。它的优势在于，可以在渲染期间动态切换一个组件为仅浏览器渲染，可以是有条件的（比如在 if 条件分支中调用，符合 use API 规则）。但目前存在使用限制，必须和 use 搭配使用，且使用到的组件必须被 `<Suspense>` 包裹，因为 `browser()` 的底层会抛出 use 错误，然后被 React 内部捕获且有意抑制了，这样在 SSR 期间会被回退到 Suspense 的 fallback 组件，实现当前组件仅在客户端环境渲染的目的。\n\n\n```tsx\nimport { use } from 'react';\nimport { browser } from 'react-dom';\n\nfunction BrowserOnly() {\n  use(browser('This component requires browser APIs.'));\n  return <BrowserContent />;\n}\n```"
+  },
+  {
     "id": "206",
     "date": "2026-09-06T19:39:23+08:00",
     "content": "不同的灵魂，相同的胃口（都没吃完 🤷",
