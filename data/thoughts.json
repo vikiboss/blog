@@ -1,5 +1,10 @@
 [
   {
+    "id": "209",
+    "date": "2026-09-08T12:10:17+08:00",
+    "content": "新的声明式样式化导航方案的 [提案](https://drafts.csswg.org/css-navigation-1/) 来了，将多页应用的复杂过渡效果从 JavaScript 迁移到 CSS，简化了实现，让开发者写的更简单、更开心。提案正稳步推进中，Chrome Canary 已经支持通过标志启用。\n\n原来不止我一个人觉得 View Transition 难用，这种东西就该用纯 CSS 来搞才对嘛～\n\n```css\n/* 1. Define Routes with @route */\n@route --home { pathname: url-pattern('/'); }\n@route --about { pathname: url-pattern('/about'); }\n\n/* 2. Query the navigation with @navigation */\n@navigation (from: --home) and (to: --about) {\n  @view-transition {\n    navigation: auto;\n    types: slide-all-to-left;\n  }\n}\n\n/* 3. Select the element that triggered the navigation with :nav-source */\n@navigation (between: --home --about) {\n  @navigation (at: --home) {\n    :nav-source img {\n      view-transition-name: image;\n    }\n  }\n  @navigation (at: --about) {\n    img#hero {\n      view-transition-name: image;\n    }\n  }\n}\n\n/* 4. Advanced link selection with :link-to() */\n:link-to(--about) {\n  color: hotpink;\n}\n```"
+  },
+  {
     "id": "208",
     "date": "2026-09-08T11:52:52+08:00",
     "content": "希望我不是第一个知道在链接上按鼠标中间可以快速在后台标签页打开，类似于先按住 Control/Command，再单击鼠标左键在后台打开链接的效果。\n\n自己试试 👉 [一个神奇的链接](https://b23.tv/vNc77B0)。"
