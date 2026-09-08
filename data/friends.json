@@ -31,14 +31,6 @@
     "avatar": "https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg"
   },
   {
-    "id": "snowykami",
-    "name": "Snowykami's Blog",
-    "url": "https://blog.sfkm.me/",
-    "description": "A full-stack developer.",
-    "avatar": "https://gravatar.loli.net/avatar/069c1439b40a686e23d3bf6a7fe907a6?d=identicon&s=80",
-    "rss": "https://blog.sfkm.me/rss.xml"
-  },
-  {
     "id": "liangcai",
     "name": "凉菜发牢骚的小角落",
     "url": "https://blog.liucl.cn/",
@@ -94,14 +86,6 @@
     "rss": "https://blog.bsgun.cn/atom.xml"
   },
   {
-    "id": "xiaohui",
-    "name": "Xiaohui'Blog",
-    "url": "https://yunnet.top/",
-    "status": "archived",
-    "description": "日常崩溃的技术 Blog",
-    "avatar": "https://q1.qlogo.cn/g?b=qq&nk=1798468479&s=100"
-  },
-  {
     "id": "jyi",
     "name": "jyi",
     "url": "https://jyi2ya.github.io/",
@@ -143,14 +127,6 @@
     "url": "https://blog.damesck.net/",
     "description": "致不完美的明天_",
     "avatar": "https://api.damesck.net/avatar.png"
-  },
-  {
-    "id": "snowball",
-    "name": "Snowball_233's Blog",
-    "url": "https://blog.qwq.my/",
-    "status": "archived",
-    "description": "Snowball_233's Personal Blog",
-    "avatar": "https://avatars.githubusercontent.com/u/97330394?v=4"
   },
   {
     "id": "shizukanamori",
