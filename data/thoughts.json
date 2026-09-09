@@ -2,7 +2,10 @@
   {
     "id": "214",
     "date": "2026-09-09T16:43:25+08:00",
-    "content": "`cn` 这个 npm 包名最终被 Tailwind CSS 团队拿下并使用，功能是我所预期的，据说相比于 clsx 和 classnames 有 [30 倍](https://github.com/shadcn-ui/cn#how-much-faster) 的性能提升。\n\n之前合并类名一直很烦。因为用 Tailwind CSS 和 UnoCSS 的原因，类名会变得非常长，导致在合并类名的时候，函数名多一个字母都变得极其敏感。因为刚那俩库的名字老长了，我又有代码洁癖，所以喜欢重新导出为 `cn` 别名，在不丢失可读性的同时，保持代码精简和优雅，就像下面那样。\n\n现在好了，直接装来用就行，不用再重新命名了，万岁。 🎉\n\n```tsx\n// src/utils\nexport { default as cn } from 'classnames'\n// 或 export { default as cn } from 'clsx'\n\n// src/index.tsx\nimport { cn } from '@/utils'\n<div className={cn('font-bold', isOn && 'text-green')}>Text</div>\n\n// 现在一步到位\nimport cn from 'cn'\n<div className={cn('font-bold', isOn && 'text-green')}>Text</div>\n```"
+    "content": "`cn` 这个 npm 包名最终被 Tailwind CSS 团队拿下并使用，功能是我所预期的，据说相比于 clsx 和 classnames 有 [30 倍](https://github.com/shadcn-ui/cn#how-much-faster) 的性能提升。\n\n之前合并类名一直很烦。因为用 Tailwind CSS 和 UnoCSS 的原因，类名会变得非常长，导致在合并类名的时候，函数名多一个字母都变得极其敏感。因为刚那俩库的名字老长了，我又有代码洁癖，所以喜欢重新导出为 `cn` 别名，在不丢失可读性的同时，保持代码精简和优雅，就像下面那样。\n\n现在好了，直接装来用就行，不用再重新命名了，万岁。 🎉\n\n```tsx\n// src/utils\nexport { default as cn } from 'classnames'\n// 或 export { default as cn } from 'clsx'\n\n// src/index.tsx\nimport { cn } from '@/utils'\n<div className={cn('font-bold', isOn && 'text-green')}>Text</div>\n\n// 现在一步到位\nimport cn from 'cn'\n<div className={cn('font-bold', isOn && 'text-green')}>Text</div>\n```",
+    "images": [
+      "https://image.viki.moe/blog/viki/661878.png"
+    ]
   },
   {
     "id": "213",
