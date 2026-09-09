@@ -1,5 +1,10 @@
 [
   {
+    "id": "212",
+    "date": "2026-09-09T16:08:59+08:00",
+    "content": "[Bun 1.4](https://bun.com/blog/bun-v1.4) 发布，这是第一个由 Rust 重写的正式子版本，带来了 `Bun.markdown.react()` 和 `.html()` API，可以直接将 markdown 文本转 React 组件和 HTML。\n\n在此之前，Bun 已经发布了 [太多](https://bun.com/reference/bun) 工具函数了，比如 Bun.$()、Bun.build()、Bun.color()、Bun.cron()、Bun.file()、Bun.serve()、Bun.stripANSI() 等。此外，还有 Bun.Archive、Bun.Glob、Bun.Image、Bun.MD5、Bun.RedisClient、Bun.S3Client、Bun.Terminal、Bun.WebSocket、Bun.WebView 等工具类。\n\n不得不说 Bun 真是野心勃勃啥都想干，哪块蛋糕都想分一口。随便拉个 API 出来都能和一堆 npm 包叫板，越来越多的前端类库、框架、工具开始成为 Bun 的竞争对手 😂。"
+  },
+  {
     "id": "211",
     "date": "2026-09-09T15:54:59+08:00",
     "content": "CSS 的新玩意，前缀选择器 (`.prefix-*`) [即将到来](https://github.com/w3c/csswg-drafts/issues/10001)，相比传统的属性选择器 (`[class*=\"prefix-\"]`) 在性能上要高。\n\n```css\n/* 匹配所有 .btn- 开头的 CSS 类 */\n.btn-* {  /* 按钮通用样式 */  }\n```"
