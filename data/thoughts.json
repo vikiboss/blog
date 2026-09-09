@@ -1,5 +1,13 @@
 [
   {
+    "id": "216",
+    "date": "2026-09-09T17:25:52+08:00",
+    "content": "[drydock](https://drydock.org/diff/react/19.2.7/19.2.8) 可以在线查看某个 npm 包不同版本之间的发布差异，获取详细的 diff 信息，用来判断某个版本是否出现后门、投毒等异常情况。\n\n然后我就发现，React 19.2.8 修正了仓库链接地址（",
+    "images": [
+      "https://image.viki.moe/blog/viki/d4a4ab.png"
+    ]
+  },
+  {
     "id": "215",
     "date": "2026-09-09T17:06:31+08:00",
     "content": "三月初 [预告](/thoughts/130) 过的 NestJS 12 终于也是 [正式发布](https://trilon.io/blog/nestjs-12-is-now-available) 了，带来了默认 ESM，并从 webpack 切换到 Rspack，还添加了对 zod 等参数验证库的 Standard Schema 支持。"
