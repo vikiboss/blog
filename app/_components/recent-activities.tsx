@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ImageIcon } from '@/components/image-icon'
 import { RelativeTime } from '@/components/relative-time'
 import { pages, type ShortPost } from '@/lib/data'
@@ -25,7 +26,7 @@ export async function RecentActivities({
   }
 
   return (
-    <section className="space-y-3">
+    <section className="space-y-6">
       <h2 className="text-text-secondary text-lg font-semibold">{title}</h2>
 
       {/* 使用网格布局，响应式 */}
@@ -34,10 +35,7 @@ export async function RecentActivities({
           const hasImages = thought.images && thought.images.length > 0
 
           return (
-            <article
-              key={thought.id}
-              className="border-border-tertiary relative space-y-1.5 border-l-2 bg-transparent py-1 pr-1 pl-3"
-            >
+            <article key={thought.id} className="relative space-y-1 bg-transparent">
               {/* 头部信息 */}
               <div className="flex items-center gap-1.5">
                 <span className="text-text-tertiary font-mono text-[11px] font-medium">
@@ -51,9 +49,11 @@ export async function RecentActivities({
               {thought.content && thought.content.trim() !== '' && (
                 <div className="flex items-center gap-2">
                   {hasImages && <ImageIcon />}
-                  <p className="text-text-secondary line-clamp-1 text-xs leading-relaxed">
-                    {truncateText(cleanMarkdownContent(thought.content), 60)}
-                  </p>
+                  <Link href={`${pages.thoughts.slug}/${thought.id}`}>
+                    <p className="text-text-primary line-clamp-1 text-xs leading-relaxed">
+                      {truncateText(cleanMarkdownContent(thought.content), 60)}
+                    </p>
+                  </Link>
                 </div>
               )}
             </article>

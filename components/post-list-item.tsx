@@ -33,7 +33,7 @@ export function PostListItem({ post, gap = '5rem', dateFormat }: PostListItemPro
         <ViewTransition name={`post-title-${post.slug}`} default="transform">
           <Link
             href={`/${post.slug}`}
-            className="text-text-secondary hover:text-text-primary flex-1 text-sm leading-snug sm:text-base"
+            className="text-text-primary flex-1 text-sm leading-snug sm:text-base"
           >
             {post.title}
           </Link>
@@ -43,17 +43,23 @@ export function PostListItem({ post, gap = '5rem', dateFormat }: PostListItemPro
         </span>
       </div>
 
-      <div className="text-text-tertiary col-start-2 row-start-1 flex items-center gap-2 font-mono text-xs sm:col-start-3 sm:row-start-1 sm:text-xs">
+      <div className="text-text-tertiary col-start-2 row-start-1 flex items-center gap-2 font-mono text-xs sm:col-start-3 sm:row-start-1 sm:text-sm">
         <span className="shrink-0 sm:hidden">·</span>
         <span className="shrink-0">
           <span className="inline sm:hidden">#{post.topic}</span>
         </span>
         <span className="shrink-0 sm:hidden">·</span>
-        <span className="w-12 shrink-0 sm:text-right">
+        <span className="w-12 sm:w-16 shrink-0 sm:text-right">
           <ReadingTime minutes={post.readingTime} />
         </span>
         {post.draft && <DraftBadge className="inline sm:hidden" />}
       </div>
+
+      {post.excerpt && (
+        <p className="text-text-tertiary col-span-full text-xs leading-relaxed sm:col-span-2 sm:col-start-2 sm:row-start-2">
+          {post.excerpt}
+        </p>
+      )}
     </article>
   )
 }

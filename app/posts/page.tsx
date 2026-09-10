@@ -2,7 +2,7 @@ import { dayjs } from '@/lib/dayjs'
 import { pages } from '@/lib/data'
 import { siteConfig } from '@/lib/config'
 import { PostListItem } from '@/components/post-list-item'
-import { getAllPosts } from '@/lib/posts'
+import { getAllPosts, type PostMetadata } from '@/lib/posts'
 import { YEAR_DESC_MAP } from '@/lib/year-desc'
 import { generateCanonicalUrl, generateBreadcrumbSchema, generateWebPageSchema } from '@/lib/seo'
 
@@ -50,8 +50,15 @@ export default async function PostsPage() {
   // 计算总字数
   const totalWords = allPosts.reduce((sum, post) => sum + post.wordCount, 0)
 
-  // 按年份分组
+  // 按年份和月份分组
   const postsByYear = Object.groupBy(posts, (post) => dayjs(post.date).year())
+
+  const getPostsByMonth = (yearPosts: PostMetadata[]) => {
+    const grouped = Object.groupBy(yearPosts, (post) => dayjs(post.date).month())
+    return Object.entries(grouped)
+      .sort(([a], [b]) => Number(b) - Number(a))
+      .map(([month, posts]) => ({ month: Number(month), posts: posts! }))
+  }
 
   // 生成从最早文章到当前年份的完整年份列表
   const currentYear = dayjs().year()
@@ -145,7 +152,19 @@ export default async function PostsPage() {
                       {getEmptyYearMessage(year)}
                     </p>
                   ) : (
-                    yearPosts.map((post) => <PostListItem key={post.slug} post={post} />)
+                    getPostsByMonth(yearPosts).map(({ month, posts: monthPosts }, idx) => (
+                      <div key={month}>
+                        {yearPosts.length > 3 && (
+                          <div className="text-text-tertiary/40 flex items-center gap-2 py-2 text-xs">
+                            <span className="shrink-0">{month + 1} 月</span>
+                            <div className="border-border-tertiary/30 w-full border-t" />
+                          </div>
+                        )}
+                        {monthPosts.map((post) => (
+                          <PostListItem key={post.slug} post={post} />
+                        ))}
+                      </div>
+                    ))
                   )}
                 </div>
               </div>
