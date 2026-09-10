@@ -2,7 +2,7 @@
 title: 'GitHub 星星历史那些事儿'
 date: 2026-09-10
 topic: '技术'
-excerpt: '本文站在用户视角，聊聊 Star History、GitHub 星星 API 的变动及其对前者服务的影响，以及后续官方和社区合作并最终解决问题的事情。'
+excerpt: '站在用户视角，聊聊 Star History、GitHub 星星 API 的变动及其对前者服务的影响，以及后续官方和社区合作并最终解决问题的事情。'
 tags:
   - 'GitHub'
   - 'Stargazer API'
