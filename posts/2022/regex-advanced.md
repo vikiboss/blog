@@ -2,7 +2,7 @@
 title: 'JavaScript 正则的高级用法'
 date: 2022-12-26
 topic: '笔记'
-excerpt: 'JavaScript 正则表达式进阶指南。深入讲解惰性匹配、命名捕获组、零宽断言（先行/后行）等高级特性，配合实战案例助你掌握 replace 函数的高级用法。'
+excerpt: '一份 JavaScript 正则笔记。'
 tags:
   - 'JavaScript'
   - '正则'

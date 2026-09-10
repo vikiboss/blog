@@ -3,7 +3,7 @@ title: '爆肝数月后，我写了一个开源原神工具「原神助手」'
 date: 2022-11-26
 topic: '生活'
 top_image: 'https://s2.loli.net/2025/11/19/ubfBFP34JXIAeTN.png'
-excerpt: '基于 Electron + React 开发的开源原神工具「原神助手」幕后故事。分享从游戏入坑到独立开发的心路历程以核心功能介绍。'
+excerpt: '沉迷原神，不能自拔。'
 tags:
   - 'Electron'
   - 'React'

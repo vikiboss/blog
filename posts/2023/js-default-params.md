@@ -2,7 +2,7 @@
 title: 'JavaScript 的函数参数竟然能相互访问到？'
 date: 2023-11-04
 topic: '前端'
-excerpt: '深入探索 JavaScript 函数默认参数的有趣特性。揭示参数之间如何相互访问、闭包捕获机制以及参数顺序对作用域的影响，通过实例演示这些鲜为人知的细节。'
+excerpt: '这个地方还真注意不到...'
 tags:
   - 'JavaScript'
   - 'ES6'

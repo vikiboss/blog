@@ -2,7 +2,7 @@
 title: 'Guitar Studio! （吉他工作室）'
 date: 2024-01-12
 topic: '生活'
-excerpt: 'Guitar Studio 是一个开源的在线吉他工具箱，集成了调音器、节拍器、和弦库等实用功能。'
+excerpt: '介绍一个开源的在线吉他工具箱，集成了调音器、节拍器、和弦库等实用功能。'
 tags:
   - Project
   - React

@@ -3,7 +3,7 @@ title: 'CSS 元素居中与常用布局方式'
 date: 2022-02-22
 top_image: 'https://s2.loli.net/2022/02/22/2CnjXk5wm4tSKIL.png'
 topic: '笔记'
-excerpt: '全面解析 CSS 元素居中的 5 种实现方案（Flex、Grid、定位等）。深入探讨 Flex 与 Grid 布局的区别与适用场景，以及浮动清除等经典布局技巧。'
+excerpt: '全面解析 CSS 元素居中的 5 种实现方案（Flex、Grid、定位等）。'
 tags:
   - 'CSS'
   - 'Flexbox'

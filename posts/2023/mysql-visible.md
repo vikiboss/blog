@@ -4,7 +4,7 @@ date: 2023-03-30
 topic: '技术'
 archived: true
 top_image: 'https://s2.loli.net/2022/03/06/ed7FfCKA1ipN24r.png'
-excerpt: '解决 MySQL Workbench 导出的 SQL 脚本在 MySQL 5.7 中报错 "syntax error near VISIBLE" 的问题。'
+excerpt: '又是一个版本不兼容问题...'
 tags:
   - 'MySQL'
   - '数据库'

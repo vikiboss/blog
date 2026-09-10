@@ -2,7 +2,7 @@
 title: '[译] 浏览器 User Agent 字符串的历史'
 date: 2026-01-29
 topic: '技术'
-excerpt: '一段以幽默风格讲述的从 Mosaic 到 Chrome，看各大浏览器如何互相伪装，最终导致 UA 字符串彻底沦为一团乱麻。'
+excerpt: '讲述各大浏览器如何互相伪装，最终导致 UA 字符串彻底沦为一团乱麻。'
 tags:
   - '浏览器'
   - 'Web'

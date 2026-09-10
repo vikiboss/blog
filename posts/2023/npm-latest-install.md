@@ -2,7 +2,7 @@
 title: '频繁发布 npm 包时如何确保始终安装最新版本'
 date: 2023-03-26
 topic: '前端'
-excerpt: '频繁发布 npm 包时，受缓存影响可能无法安装最新版本。使用 --prefer-online 标志和配置 .npmrc 文件两种方法，确保始终获取最新发布的 npm 包。'
+excerpt: '前端依赖更新小妙招'
 tags:
   - 'npm'
   - 'Node.js'

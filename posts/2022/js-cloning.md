@@ -3,7 +3,7 @@ title: '简单实现一下 JavaScript 中的深拷贝与浅拷贝'
 date: 2022-03-06
 topic: '前端'
 top_image: 'https://s2.loli.net/2022/03/06/ed7FfCKA1ipN24r.png'
-excerpt: '深入解析 JavaScript 深拷贝与浅拷贝的本质区别，手写深拷贝函数，并介绍 structuredClone 等现代化解决方案。'
+excerpt: '解析 JavaScript 的深拷贝与浅拷贝的本质区别，手写深拷贝函数。'
 tags:
   - 'JavaScript'
   - '深拷贝'

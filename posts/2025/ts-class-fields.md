@@ -2,7 +2,7 @@
 title: '记一次由 TypeScript 配置引发的运行时逻辑异常'
 date: 2025-11-26
 topic: '前端'
-excerpt: '同一份 TypeScript 代码，在不同环境下运行结果竟然完全不同？问题出在 useDefineForClassFields 这个配置项上。本文将探讨它的工作原理、影响范围，以及如何避免踩坑。'
+excerpt: '同一份 TypeScript 代码，在不同环境下运行结果竟然完全不同？'
 tags:
   - 'TypeScript'
   - 'tsconfig.json'

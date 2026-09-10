@@ -2,7 +2,7 @@
 title: 'GitHub 语言统计又双叒叕抽风？手把手教你驯服'
 date: 2026-01-05
 topic: '技术'
-excerpt: 'GitHub 能够统计和显示仓库中的编程语言分布情况，然而有时经常抽风，将无关文件纳入统计，导致统计结果失真，本文介绍了如何通过相关配置来纠正这些问题。'
+excerpt: '今天你的 GitHub 语言统计抽风了吗？'
 tags:
   - 'GitHub'
   - 'Linguist'

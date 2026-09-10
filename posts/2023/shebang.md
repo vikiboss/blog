@@ -2,7 +2,7 @@
 title: '什么是 Shebang (或 Hashbang)'
 date: 2023-03-14
 topic: '技术'
-excerpt: 'Shebang (#!) 是脚本文件首行的特殊字符序列，用于指定解释器。'
+excerpt: '一行神秘的特殊字符序列。'
 tags:
   - Linux
   - Shell

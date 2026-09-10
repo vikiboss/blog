@@ -2,7 +2,7 @@
 title: '每一个前端都应该了解的常见 Linux 命令'
 date: 2023-02-14
 topic: '技术'
-excerpt: '前端开发必知必会的 Linux 命令大全。涵盖基础、进阶及实用场景的 50+ 常用命令详解。'
+excerpt: '前端开发必知必会的 Linux 命令大全。'
 archived: true
 tags:
   - 'Linux'

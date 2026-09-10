@@ -2,7 +2,7 @@
 title: '现代化的高质量 React Hooks 库（已开源）'
 date: 2024-07-04
 topic: '前端'
-excerpt: '介绍一个现代化、SSR 友好且高度优化的 React Hooks 库。本文介绍其设计理念、核心特性（如安全状态、稳定引用）以及背后的工程化实践。'
+excerpt: '一个现代化、SSR 友好且高度优化的 React Hooks 库。'
 tags:
   - React
   - Hooks

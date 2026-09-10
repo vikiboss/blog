@@ -2,7 +2,7 @@
 title: 'NCUHOME 研发组前端培训之 DOM 操作 & AJAX'
 date: 2020-10-30
 topic: '前端'
-excerpt: '面向新生的前端基础培训文档。深入浅出地讲解浏览器工作原理、DOM 操作核心概念以及 AJAX 异步请求技术，涵盖原生 XMLHttpRequest 与现代 Fetch API 的使用。'
+excerpt: '面向新生的前端基础培训文档，涵盖现代化的 DOM 操作和 AJAX 技术。'
 tags:
   - 'JavaScript'
   - 'DOM'

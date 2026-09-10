@@ -2,7 +2,7 @@
 title: '我写了一个 CS2 Major 竞猜在线抄作业项目'
 date: 2025-12-08
 topic: '生活'
-excerpt: '追踪 CS2 Major 竞猜进度并不方便，于是我写了一个在线抄作业项目，更高效地参考和跟踪主播竞猜进度。'
+excerpt: '快进来抄作业，Major 钻石币在向你招手。'
 tags:
   - 'CS2'
   - 'Major'

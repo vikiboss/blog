@@ -3,7 +3,7 @@ title: 'setTimeout 初探'
 date: 2020-04-02
 topic: '前端'
 top_image: 'https://i.loli.net/2020/11/21/QLTeHUhrAOBCzER.jpg'
-excerpt: '深入解析 JavaScript 中 setTimeout 在循环中的经典面试题。探讨 var、let 声明及 IIFE 对作用域的影响，分析不同环境输出差异及底层原理。'
+excerpt: '解析 setTimeout 在循环中的经典面试题。探讨 var、let 声明及 IIFE 对作用域的影响。'
 tags:
   - 'JavaScript'
   - '作用域'

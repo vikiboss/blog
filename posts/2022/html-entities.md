@@ -2,7 +2,7 @@
 title: '浅谈 HTML 中的字符实体（如 `&nbsp;`、`&lt;` 等）'
 date: 2022-12-25
 topic: '前端'
-excerpt: '详解 HTML 字符实体引用（如 &nbsp;、&lt;）。探讨字符值引用与实体名称的区别、Unicode 编码转换原理，以及在实际开发中如何使用 html-entities 库处理转义问题。'
+excerpt: '简单的了解和介绍，日常见的还是不少，不至于不知道是个啥玩意儿'
 tags:
   - 'HTML'
   - '编码'

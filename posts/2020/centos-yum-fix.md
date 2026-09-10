@@ -3,7 +3,7 @@ title: '关于 CentOS 7 中 yum 命令失效问题的解决方案'
 date: 2020-01-12
 top_image: 'https://i.loli.net/2020/11/21/o7sYJZVIuqMRpT3.jpg'
 topic: '笔记'
-excerpt: '解决 CentOS 7 系统中 yum 命令失效的常见问题。详细分析网卡未启动和 yum 源配置错误两种原因，并提供启用网卡自启动及修改镜像源的完整解决方案。'
+excerpt: '解决 CentOS 7 系统中 yum 命令失效的常见问题，提供启用网卡自启动及修改镜像源的完整解决方案。'
 tags:
   - 'Linux'
   - 'CentOS'

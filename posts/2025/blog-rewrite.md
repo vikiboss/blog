@@ -2,7 +2,7 @@
 title: '博客重写记：当 xLog 落幕，数据掌控欲与爱情同时降临'
 date: 2025-11-24
 topic: '技术'
-excerpt: 'xLog 开发停滞，与此同时，恋爱关系带来了定制化需求。AI 都逐渐成熟，想了想还是重构一下博客吧。'
+excerpt: 'xLog 开发停滞，与此同时，恋爱关系带来了定制化需求。AI 逐渐成熟，想了想还是重构一下吧。'
 top_image: 'https://s2.loli.net/2025/11/24/i9L3W45sh7FHkqA.png'
 tags:
   - 博客搭建

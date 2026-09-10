@@ -2,7 +2,7 @@
 title: '记录 Axios 的 `Z_BUF_ERROR` Bug'
 date: 2022-12-25
 topic: '笔记'
-excerpt: '记录 Axios 1.2.x 版本中遇到的 Z_BUF_ERROR 问题。分析 Brotli 解压缩在处理空响应时的 Bug 成因，提供临时解决方案并追踪官方修复进展。'
+excerpt: '一次简单的记录，也是一次对社区态度的呼吁。'
 tags:
   - 'Axios'
   - 'Bug'

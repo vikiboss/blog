@@ -2,7 +2,7 @@
 title: '解决 git/ssh 报错：too many authentication failures'
 date: 2024-10-14
 topic: '技术'
-excerpt: '使用 Git 或 SSH 时遇到 "too many authentication failures" 报错？通常是多密钥冲突导致的。本文介绍通过配置 ~/.ssh/config 中的 IdentitiesOnly 选项快速解决此问题。'
+excerpt: '边踩坑，边记录。'
 tags:
   - SSH
   - Git

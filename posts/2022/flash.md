@@ -2,13 +2,13 @@
 title: '如何优雅地畅玩 4399 等 Flash 游戏'
 date: 2022-12-31
 topic: '生活'
+excerpt: '带你速通 4399，Flash 算个 der'
 tags:
   - 'Flash'
   - '浏览器'
   - '游戏'
   - '历史遗留'
   - '工具'
-excerpt: 'Adobe Flash Player 停止支持后的优雅解决方案。推荐开源的 CefFlashBrowser 专用浏览器，以及使用旧版 Chrome 或纯净版 Flash 畅玩 4399 等经典网页游戏的方法。'
 ---
 
 ## Flash 和浏览器现状
