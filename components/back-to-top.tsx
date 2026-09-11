@@ -51,7 +51,7 @@ export function BackToTop() {
       <button
         onClick={scrollToTop}
         className={cn(
-          'group/btn bg-bg-secondary border-border text-text-secondary hover:text-text-primary fixed right-4 bottom-24 z-40 flex h-12 w-12 items-center justify-center rounded-full border shadow-lg transition-all! hover:shadow-xl xl:hidden',
+          'group/btn bg-bg-secondary border-border text-text-primary fixed right-4 bottom-24 z-40 flex h-12 w-12 items-center justify-center rounded-full border shadow-lg transition-all! hover:shadow-xl xl:hidden',
           isVisible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0',
         )}
         aria-label="回到顶部"
@@ -63,7 +63,7 @@ export function BackToTop() {
       <button
         onClick={scrollToTop}
         className={cn(
-          'group/btn bg-bg-secondary border-border text-text-secondary hover:text-text-primary fixed right-8 bottom-8 z-40 hidden h-12 w-12 items-center justify-center rounded-full border shadow-lg transition-all! hover:shadow-xl xl:flex',
+          'group/btn bg-bg-secondary border-border text-text-primary fixed right-8 bottom-8 z-40 hidden h-12 w-12 items-center justify-center rounded-full border shadow-lg transition-all! hover:shadow-xl xl:flex',
           isVisible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0',
         )}
         aria-label="回到顶部"

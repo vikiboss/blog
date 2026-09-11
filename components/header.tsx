@@ -87,7 +87,7 @@ export function Header() {
           <Link
             href={pages.posts.slug}
             className={cn(
-              'text-text-secondary sm:hover:text-text-primary active:text-text-primary',
+              'text-text-primary',
             )}
           >
             {pages.posts.title}
@@ -96,7 +96,7 @@ export function Header() {
           <Link
             href={pages.thoughts.slug}
             className={cn(
-              'text-text-secondary sm:hover:text-text-primary active:text-text-primary',
+              'text-text-primary',
             )}
           >
             {pages.thoughts.title}
@@ -105,7 +105,7 @@ export function Header() {
           {/* <Link
             href={pages.mioSays.slug}
             className={cn(
-              'text-text-secondary sm:hover:text-text-primary active:text-text-primary',
+              'text-text-primary',
             )}
           >
             {pages.mioSays.title}
@@ -114,7 +114,7 @@ export function Header() {
           {/* <Link
             href={pages.about.slug}
             className={cn(
-              'text-text-secondary sm:hover:text-text-primary active:text-text-primary',
+              'text-text-primary',
             )}
             onClick={() => setIsMoreOpen(false)}
           >
@@ -135,7 +135,7 @@ export function Header() {
                 }
               }}
               className={cn(
-                'group/btn text-text-secondary sm:hover:text-text-primary active:text-text-primary',
+                'group/btn text-text-primary',
               )}
               aria-expanded={isMoreOpen}
               aria-haspopup="true"
@@ -150,7 +150,7 @@ export function Header() {
                   key={pages.mioSays.slug}
                   href={pages.mioSays.slug}
                   className={cn(
-                    'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                    'text-text-primary',
                     'block px-4 py-2',
                   )}
                   onClick={() => setIsMoreOpen(false)}
@@ -164,7 +164,7 @@ export function Header() {
                       key={page.slug}
                       href={page.slug}
                       className={cn(
-                        'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                        'text-text-primary',
                         'block px-4 py-2',
                       )}
                       onClick={() => {
@@ -179,7 +179,7 @@ export function Header() {
                   key={pages.about.slug}
                   href={pages.about.slug}
                   className={cn(
-                    'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                    'text-text-primary',
                     'block px-4 py-2',
                   )}
                   onClick={() => setIsMoreOpen(false)}
@@ -192,7 +192,7 @@ export function Header() {
                 <Link
                   href={pages.friends.slug}
                   className={cn(
-                    'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                    'text-text-primary',
                     'block px-4 py-2',
                   )}
                   onClick={() => setIsMoreOpen(false)}
@@ -203,7 +203,7 @@ export function Header() {
                 <a
                   href={pages.messages.slug}
                   className={cn(
-                    'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                    'text-text-primary',
                     'block px-4 py-2',
                   )}
                   onClick={() => setIsMoreOpen(false)}
@@ -214,7 +214,7 @@ export function Header() {
                 <a
                   href={pages.reading.slug}
                   className={cn(
-                    'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                    'text-text-primary',
                     'block px-4 py-2',
                   )}
                   onClick={() => setIsMoreOpen(false)}
@@ -228,7 +228,7 @@ export function Header() {
                     href={siteConfig.author.github}
                     target="_blank"
                     className={cn(
-                      'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                      'text-text-primary',
                       'block px-4 py-2',
                     )}
                     onClick={() => setIsMoreOpen(false)}
@@ -240,7 +240,7 @@ export function Header() {
                     href={siteConfig.links.rss}
                     target="_blank"
                     className={cn(
-                      'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                      'text-text-primary',
                       'block px-4 py-2',
                     )}
                     onClick={() => setIsMoreOpen(false)}
@@ -252,7 +252,7 @@ export function Header() {
                     href={siteConfig.links.travellings}
                     target="_blank"
                     className={cn(
-                      'text-text-secondary hover:bg-bg-secondary hover:text-text-primary',
+                      'text-text-primary',
                       'block px-4 py-2',
                     )}
                     onClick={() => setIsMoreOpen(false)}

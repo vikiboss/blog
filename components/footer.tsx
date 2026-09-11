@@ -20,7 +20,7 @@ export function LicenseText({ className, short }: { className?: string; short?: 
         href={siteConfig.copyright.license.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-text-secondary hover:text-text-primary mx-1"
+        className="text-text-primary mx-1"
       >
         {siteConfig.copyright.license.name}
       </a>
@@ -36,7 +36,7 @@ function SocialLinks({ className }: { className?: string }) {
         href={siteConfig.author.github}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-text-secondary hover:text-text-primary"
+        className="text-text-primary"
         title="访问 GitHub 主页"
       >
         GitHub
@@ -45,7 +45,7 @@ function SocialLinks({ className }: { className?: string }) {
         href={siteConfig.links.rss}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-text-secondary hover:text-text-primary"
+        className="text-text-primary"
         title="RSS"
       >
         RSS
@@ -54,7 +54,7 @@ function SocialLinks({ className }: { className?: string }) {
         href={siteConfig.links.travellings}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-text-secondary hover:text-text-primary"
+        className="text-text-primary"
         title="开往，友链接力"
       >
         开往 · 友链接力
@@ -68,7 +68,7 @@ function Tagline() {
     <div className="text-text-secondary flex items-center gap-2">
       <Link passHref href="/">
         <Image
-          className="inline-block rounded-full align-middle"
+          className="round-cobblestone inline-block rounded-full align-middle"
           src="/avatar.png"
           alt="头像"
           width={20}
@@ -88,24 +88,18 @@ export function Footer() {
     >
       <div className="mx-auto w-full max-w-3xl pt-4 pb-16 sm:pt-6 sm:pb-20">
         {/* 移动端布局 */}
-        <div className="block sm:hidden">
-          <div className="flex flex-col gap-4 py-2 text-sm">
-            <Tagline />
-            <LicenseText short />
-            <SocialLinks className="flex items-center gap-2 text-left" />
-            <CopyrightText />
-          </div>
+        <div className="flex flex-col gap-4 py-2 text-sm sm:hidden">
+          <Tagline />
+          <LicenseText short />
+          <CopyrightText />
         </div>
 
         {/* 桌面端布局 */}
         <div className="hidden sm:block">
-          <div className="flex flex-row justify-between gap-3 text-xs">
-            <div className="flex flex-col gap-3 text-left">
-              <Tagline />
-              <LicenseText />
-              <CopyrightText />
-            </div>
-            <SocialLinks className="flex flex-col items-end gap-3 text-right" />
+          <div className="flex flex-col gap-3 text-left text-xs">
+            <Tagline />
+            <LicenseText />
+            <CopyrightText />
           </div>
         </div>
       </div>

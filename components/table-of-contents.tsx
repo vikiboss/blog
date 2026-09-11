@@ -384,7 +384,7 @@ export function StaticTableOfContentsPC({
                     isActive
                       ? 'text-text-primary font-medium'
                       : isHovered
-                        ? 'text-text-secondary hover:text-text-primary'
+                        ? 'text-text-primary'
                         : 'text-text-tertiary',
                   )}
                   title={item.title}
@@ -451,7 +451,7 @@ export function StaticTableOfContentsMobile({
       {/* 浮动按钮 - 仅移动端显示 */}
       <button
         onClick={() => setIsOpen(true)}
-        className="group/btn bg-bg-secondary border-border text-text-secondary hover:text-text-primary fixed right-4 bottom-10 z-40 flex h-12 w-12 items-center justify-center rounded-full border shadow-lg transition-all! hover:shadow-xl xl:hidden"
+        className="group/btn bg-bg-secondary border-border text-text-primary fixed right-4 bottom-10 z-40 flex h-12 w-12 items-center justify-center rounded-full border shadow-lg transition-all! hover:shadow-xl xl:hidden"
         aria-label="打开文章目录"
       >
         <MenuIcon className="h-6 w-6 transition-transform group-active/btn:scale-90" />

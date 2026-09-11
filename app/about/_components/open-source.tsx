@@ -78,7 +78,7 @@ export function AboutOpenSource({ data, moreLink, id, title }: AboutOpenSourcePr
           href={moreLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-text-secondary hover:text-text-primary inline-block text-sm"
+          className="text-text-primary inline-block text-sm"
         >
           探索更多
         </a>

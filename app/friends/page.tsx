@@ -1,7 +1,6 @@
 import { friends, pages } from '@/lib/data'
 import { createHighlighter } from 'shiki/bundle-web.mjs'
 import { siteConfig } from '@/lib/config'
-import { FriendCard } from './_components/friend-card'
 import { RandomFriends } from './_components/random-friends'
 import { FriendJsonBlock } from './_components/friend-json-block'
 import { generateCanonicalUrl, generateBreadcrumbSchema, generateWebPageSchema } from '@/lib/seo'
@@ -121,11 +120,11 @@ export default async function FriendsPage() {
             </summary>
             <div className="text-text-secondary space-y-4 text-sm">
               <div>
-                本博客支持展示以下内容，仅名称和地址必须。如需交换，请按以下格式在
+                本博客支持以下字段，仅名称和地址必须。如需交换，请在
                 <a href="/messages" className="mx-1">
                   话匣子
                 </a>
-                页面留言。
+                页面使用「友链模版」编辑后留言。
               </div>
               <FriendJsonBlock html={html} json={json} />
               <div>

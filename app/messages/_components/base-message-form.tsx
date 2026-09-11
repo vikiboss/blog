@@ -12,6 +12,7 @@ import { XIcon } from '@/icons/x'
 import { Button } from '@/components/button'
 import { SendIcon } from '@/icons/send'
 import { useMount } from '@shined/react-use'
+import { FriendIcon } from '@/icons/friend'
 import { EmojiPicker } from './emoji-picker'
 import { useFormStatus } from 'react-dom'
 import { useState, useRef } from 'react'
@@ -215,7 +216,7 @@ export function BaseMessageForm({
           <div className="flex items-center gap-2">
             <label
               htmlFor={`${type}-name`}
-              className="text-text-secondary shrink-0 text-xs sm:text-sm"
+              className="text-text-primary shrink-0 text-xs sm:text-sm"
             >
               名称:
             </label>
@@ -235,7 +236,7 @@ export function BaseMessageForm({
           <div className="relative flex items-center gap-2">
             <label
               htmlFor={`${type}-email`}
-              className="text-text-secondary shrink-0 text-xs sm:text-sm"
+              className="text-text-primary shrink-0 text-xs sm:text-sm"
             >
               邮箱:
             </label>
@@ -268,7 +269,7 @@ export function BaseMessageForm({
           <div className="flex items-center gap-2">
             <label
               htmlFor={`${type}-website`}
-              className="text-text-secondary shrink-0 text-xs sm:text-sm"
+              className="text-text-primary shrink-0 text-xs sm:text-sm"
             >
               网站:
             </label>
@@ -297,7 +298,7 @@ export function BaseMessageForm({
               ? '还在等什么？来都来了，键盘敲起。'
               : `回复 @${repliedAuthor?.name || '留言作者'} ...`
           }
-          className="no-focus w-full"
+          className="no-focus field-sizing-content min-h-24 w-full"
           required
         />
 
@@ -306,9 +307,33 @@ export function BaseMessageForm({
           <div className="text-text-tertiary flex items-center gap-2">
             <EmojiPicker onSelect={handleEmojiSelect} />
             {isMessage && (
-              <span className="hidden text-xs sm:inline">
-                支持 Markdown、预设表情、剧透语法，如 || 剧透内容 ||
-              </span>
+              <Button
+                type="button"
+                size="sm"
+                aria-label="插入友链模版"
+                onClick={() => {
+                  setFormData((prev) => ({
+                    ...prev,
+                    content: `申请互换友链，我的站点信息如下：\n\n\`\`\`json\n${JSON.stringify(
+                      {
+                        name: 'Viki 写东西的地方',
+                        url: 'https://blog.viki.moe',
+                        description: '生活需要记录。',
+                        avatar: 'https://blog.viki.moe/avatar.png',
+                        rss: 'https://blog.viki.moe/rss',
+                      },
+                      null,
+                      2,
+                    )}\n\`\`\``,
+                  }))
+                }}
+              >
+                <FriendIcon className="h-3.5 w-3.5" />
+                友链模版
+              </Button>
+            )}
+            {isMessage && (
+              <span className="hidden text-xs sm:inline">支持 Markdown、预设表情、剧透语法</span>
             )}
           </div>
 
