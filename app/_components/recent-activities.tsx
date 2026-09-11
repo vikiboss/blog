@@ -38,7 +38,7 @@ export async function RecentActivities({
           const hasImages = thought.images && thought.images.length > 0
 
           return (
-            <article key={thought.id} className="relative space-y-1 bg-transparent truncate">
+            <article key={thought.id} className="relative space-y-1 truncate bg-transparent">
               {/* 头部信息 */}
               <div className="flex items-center gap-1.5">
                 <span className="text-text-tertiary font-mono text-[11px] font-medium">
@@ -71,7 +71,7 @@ export async function RecentActivities({
       {totalCount > showMoreThreshold && (
         <div className="pt-1">
           <a
-            href={pages.thoughts.slug}
+            href={isMioSay ? pages.mioSays.slug : pages.thoughts.slug}
             className="text-text-primary text-[11px]"
           >
             查看全部（{totalCount.toLocaleString('zh-Hans-CN')}）→
