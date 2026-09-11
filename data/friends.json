@@ -43,7 +43,7 @@
     "name": "三瓶可乐不过岗",
     "url": "https://blog.thricecola.com/",
     "description": "看看～ 看看～",
-    "avatar": "https://thricecola.com/assets/512-t_MlOS14.jpg",
+    "avatar": "https://blog.thricecola.com/img/avatar.jpg",
     "rss": "https://blog.thricecola.com/rss.xml"
   },
   {
@@ -57,8 +57,8 @@
     "id": "dogxi",
     "name": "Dogxi 的狗窝",
     "url": "https://blog.dogxi.me/",
-    "description": "Dogxi 的个人博客，因为热爱所以热爱。",
-    "avatar": "https://blog.dogxi.me/avatar.png",
+    "description": "把代码、日常和一点点远方，写进这里。",
+    "avatar": "https://dogxi.me/favicon.ico",
     "rss": "https://blog.dogxi.me/rss.xml"
   },
   {
@@ -104,7 +104,7 @@
     "id": "rita",
     "name": "木风",
     "url": "https://rita.cc.cd/",
-    "description": "愿你每一天都充满阳光",
+    "description": "愿你每一天都充满阳光。",
     "avatar": "https://rita.cc.cd/favicon.ico"
   },
   {
@@ -116,10 +116,10 @@
   },
   {
     "id": "hzy",
-    "name": "HZY 的个人网站",
+    "name": "HZY",
     "url": "https://hzy.us.kg/",
-    "description": "主页、游戏、博客、oj、mio 语言等",
-    "avatar": "https://cdn.luogu.com.cn/upload/usericon/1394471.png"
+    "description": "一名热爱编程和算法竞赛的学习者。",
+    "avatar": "https://q1.qlogo.cn/g?b=qq&nk=3883244539&s=100"
   },
   {
     "id": "damesck",
@@ -127,15 +127,6 @@
     "url": "https://blog.damesck.net/",
     "description": "致不完美的明天_",
     "avatar": "https://api.damesck.net/avatar.png"
-  },
-  {
-    "id": "shizukanamori",
-    "name": "静かな森",
-    "url": "https://innei.in/",
-    "status": "archived",
-    "description": "致虚极，守静笃。",
-    "avatar": "https://avatars.githubusercontent.com/u/41265413?v=4",
-    "rss": "https://innei.in/feed"
   },
   {
     "id": "mikann",
@@ -165,7 +156,7 @@
     "id": "yuexiabug",
     "name": "YUEXIABUG",
     "url": "https://yxbug.ren",
-    "description": "愿指引明路的苍蓝星为你闪耀",
+    "description": "愿指引明路的苍蓝星为你闪耀。",
     "avatar": "https://bu.dusays.com/2025/09/08/68be367856ad1.jpg",
     "rss": "https://yxbug.ren/atom.xml"
   }

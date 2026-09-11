@@ -84,7 +84,7 @@ export function Footer() {
   return (
     <footer
       role="contentinfo"
-      className="border-border max-w-3xl border-t px-4 transition-opacity sm:px-6 sm:opacity-60 sm:hover:opacity-100"
+      className="border-border max-w-3xl border-t px-4 transition-opacity sm:px-6"
     >
       <div className="mx-auto w-full max-w-3xl pt-4 pb-16 sm:pt-6 sm:pb-20">
         {/* 移动端布局 */}

@@ -37,7 +37,7 @@ export function RandomFriends({ friends }: FriendsListRandomProps) {
   }, [friends])
 
   if (friends.length === 0) {
-    return <div className="text-text-tertiary py-12 text-center">暂无好朋友，等待添加中...</div>
+    return <div className="text-text-tertiary py-12 text-center">暂无友链，等待添加中...</div>
   }
 
   const handleRandomVisit = () => {
@@ -59,7 +59,7 @@ export function RandomFriends({ friends }: FriendsListRandomProps) {
             <path d="M8 5l8 7-8 7V5z" />
           </svg>
           <span className="text-text-tertiary text-xs font-medium tracking-wide uppercase">
-            好朋友们
+            互联网好友
           </span>
           <span className="text-text-quaternary text-xs">共 {activeFriends.length} 位</span>
           {/* 点击按钮时阻止 summary 的折叠事件 */}

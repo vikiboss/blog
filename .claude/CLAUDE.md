@@ -72,7 +72,7 @@ pnpm test -- <file>   # 运行单个测试文件
 
 ### 页面路由
 
-首页 `/`、文章详情 `/[slug]`、文章归档 `/posts`、碎碎念 `/thoughts`、Mio 说 `/mio-says`、大事记 `/timeline`、好朋友 `/friends`、储物箱 `/collection`、书影音 `/library`、电子游戏 `/game`、岛读 `/reading`、话匣子 `/messages`、关于 `/about`、RSS `/rss`
+首页 `/`、文章详情 `/[slug]`、文章归档 `/posts`、碎碎念 `/thoughts`、Mio 说 `/mio-says`、大事记 `/timeline`、友链 `/friends`、储物箱 `/collection`、书影音 `/library`、电子游戏 `/game`、岛读 `/reading`、话匣子 `/messages`、关于 `/about`、RSS `/rss`
 
 ## 代码规范
 

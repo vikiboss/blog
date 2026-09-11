@@ -319,12 +319,51 @@
   background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: 0.5em 1em;
+  padding: 0;
 }
 
 .prose summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
   cursor: pointer;
   font-weight: 600;
+  padding: 0.75em 1em;
+  border-radius: var(--radius-md);
+  list-style: none;
+  transition: background-color 0.15s;
+}
+
+.prose summary::-webkit-details-marker {
+  display: none;
+}
+
+.prose summary::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid var(--color-text-primary);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: transform 0.2s;
+}
+
+.prose details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.prose summary:hover {
+  background: var(--color-bg-tertiary);
+}
+
+.prose details[open] summary {
+  border-bottom: 1px solid var(--color-border);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  margin-bottom: 0.75em;
+}
+
+.prose details > *:not(summary) {
+  padding: 0 1em 1em;
 }
 
 /* 优化删除线和斜体样式 */

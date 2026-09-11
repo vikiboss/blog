@@ -1,8 +1,9 @@
 import Link from 'next/link'
+import { TextIcon } from '@/components/text-icon'
 import { ImageIcon } from '@/components/image-icon'
 import { RelativeTime } from '@/components/relative-time'
+import { cleanMarkdownContent } from '@/lib/markdown'
 import { pages, type ShortPost } from '@/lib/data'
-import { truncateText, cleanMarkdownContent } from '@/lib/markdown'
 
 interface RecentActivitiesProps {
   title?: string
@@ -24,6 +25,8 @@ export async function RecentActivities({
   if (shortPosts.length === 0) {
     return null
   }
+
+  const isMioSay = title?.includes('mio') || title?.includes('Mio')
 
   return (
     <section className="space-y-6">
@@ -48,10 +51,13 @@ export async function RecentActivities({
               {/* 内容预览 */}
               {thought.content && thought.content.trim() !== '' && (
                 <div className="flex items-center gap-2">
-                  {hasImages && <ImageIcon />}
-                  <Link href={`${pages.thoughts.slug}/${thought.id}`}>
-                    <p className="text-text-primary line-clamp-1 text-xs leading-relaxed">
-                      {truncateText(cleanMarkdownContent(thought.content), 60)}
+                  {hasImages ? <ImageIcon /> : <TextIcon />}
+                  <Link
+                    href={`${isMioSay ? pages.mioSays.slug : pages.thoughts.slug}/${thought.id}`}
+                    className="line-clamp-1"
+                  >
+                    <p className="text-text-primary truncate text-xs leading-relaxed">
+                      {cleanMarkdownContent(thought.content)}
                     </p>
                   </Link>
                 </div>

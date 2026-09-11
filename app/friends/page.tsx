@@ -65,6 +65,14 @@ export default async function FriendsPage() {
     theme: 'one-dark-pro',
     defaultColor: false,
     cssVariablePrefix: '--shiki-',
+    transformers: [
+      {
+        pre(this, hast) {
+          hast.properties.style = 'margin: 0;'
+          return hast
+        },
+      },
+    ],
   })
 
   return (
@@ -96,43 +104,35 @@ export default async function FriendsPage() {
           ),
         }}
       />
-      <div className="space-y-8 py-8 sm:space-y-12 sm:py-12">
+      <div className="space-y-4 py-8 sm:space-y-8 sm:py-12">
         {/* Header */}
         <section className="space-y-3">
-          <h1 className="text-3xl font-bold sm:text-4xl">好朋友们</h1>
+          <h1 className="text-3xl font-bold sm:text-4xl">友链</h1>
           <p className="text-text-secondary">
-            {`${pages.friends.description}。共收录 ${friends.filter((f) => f.status !== 'archived').length} 位好朋友。`}
+            {`${pages.friends.description}。共收录 ${friends.filter((f) => f.status !== 'archived').length} 位好友。`}
           </p>
         </section>
 
         {/* Friend Link Info */}
-        <section className="border-border-tertiary mt-8 space-y-3 border-l-2 pl-4 sm:mt-12">
-          <h2 className="text-text-primary text-base font-semibold">交换友链</h2>
-          <div className="text-text-secondary space-y-4 text-sm">
-            <p>
-              欢迎交换友链！本博客支持展示以下字段，仅名称和地址必须。如需交换，请按以下格式在
-              <a href="/messages" className="mx-1">
-                话匣子
-              </a>
-              页面留言。
-            </p>
-            <p className="text-text-tertiary text-xs italic">
-              注：建议贵站建站半年以上，站点稳定，原创内容为主，非商业化。交换完记得经常来玩哦！
-            </p>
-            <FriendJsonBlock html={html} json={json} />
-            {/* 预览 */}
-            <div className="text-text-tertiary mt-4">本站信息预览：</div>
-            <FriendCard
-              friend={{
-                id: 'preview',
-                name: siteConfig.name,
-                url: siteConfig.url,
-                description: siteConfig.tagline,
-                avatar: siteConfig.links.avatar,
-                rss: siteConfig.links.rss,
-              }}
-            />
-          </div>
+        <section className="prose border-border-tertiary">
+          <details>
+            <summary>
+              <div className="text-base font-semibold">交换友链 （点击展开）</div>
+            </summary>
+            <div className="text-text-secondary space-y-4 text-sm">
+              <div>
+                本博客支持展示以下内容，仅名称和地址必须。如需交换，请按以下格式在
+                <a href="/messages" className="mx-1">
+                  话匣子
+                </a>
+                页面留言。
+              </div>
+              <FriendJsonBlock html={html} json={json} />
+              <div>
+                注：建议贵站建站半年以上、站点稳定、原创为主、非商业化。交换完记得经常来玩！
+              </div>
+            </div>
+          </details>
         </section>
 
         {/* Friends Grid */}

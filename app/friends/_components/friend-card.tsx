@@ -41,7 +41,7 @@ export function FriendCard({ friend }: FriendCardProps) {
       )}
     >
       <a
-        title={`${friend.name}: ${friend.description || '这位朋友很懒，什么也没留下。'}`}
+        title={`${friend.name}: ${friend.description || '这位朋友有点懒，什么也没留下~'}`}
         href={friend.url}
         target="_blank"
         className="no-icon absolute inset-0"
@@ -84,7 +84,7 @@ export function FriendCard({ friend }: FriendCardProps) {
         </div>
 
         <p className="text-text-tertiary line-clamp-2 truncate text-sm leading-relaxed text-nowrap">
-          {friend.description || '这位朋友有点懒，什么也没留下呢~'}
+          {friend.description || '这位朋友有点懒，什么也没留下~'}
         </p>
       </div>
     </div>

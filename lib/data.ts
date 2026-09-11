@@ -82,8 +82,8 @@ export const pages = {
     slug: '/timeline',
   },
   friends: {
-    title: '好朋友们',
-    description: `记录 ${siteConfig.author.name} 在互联网上的好朋友们，相互学习、共同进步`,
+    title: '友链',
+    description: `记录 ${siteConfig.author.name} 在互联网上的好友，相互学习、共同进步`,
     slug: '/friends',
   },
   collection: {
@@ -240,7 +240,7 @@ const defaultFriends: Friend[] = [
     id: 'example-friend',
     name: 'Example Friend',
     url: 'https://example.com',
-    description: '示例友链，请替换为真实的好朋友。',
+    description: '示例友链，请替换为真实的好友。',
     avatar: 'https://q1.qlogo.cn/g?b=qq&nk=10001&s=100',
     rss: 'https://example.com/rss',
   },
@@ -248,7 +248,7 @@ const defaultFriends: Friend[] = [
     id: 'example-friend-2',
     name: 'Example Friend 2',
     url: 'https://example.com',
-    description: '示例友链，请替换为真实的好朋友。',
+    description: '示例友链，请替换为真实的好友。',
   },
 ]
 

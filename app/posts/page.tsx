@@ -146,25 +146,13 @@ export default async function PostsPage() {
                     ({yearPosts.length.toLocaleString('zh-Hans-CN')})
                   </span>
                 </h2>
-                <div className="border-border-tertiary space-y-1 border-l-2 pl-4 sm:pl-6">
+                <div className="border-border-tertiary space-y-2 border-l-2 pl-4 sm:pl-6">
                   {hasNoPosts ? (
                     <p className="text-text-tertiary text-xs italic opacity-60 sm:text-sm">
                       {getEmptyYearMessage(year)}
                     </p>
                   ) : (
-                    getPostsByMonth(yearPosts).map(({ month, posts: monthPosts }, idx) => (
-                      <div key={month}>
-                        {yearPosts.length > 3 && (
-                          <div className="text-text-tertiary/40 flex items-center gap-2 py-2 text-xs">
-                            <span className="shrink-0">{month + 1} 月</span>
-                            <div className="border-border-tertiary/30 w-full border-t" />
-                          </div>
-                        )}
-                        {monthPosts.map((post) => (
-                          <PostListItem key={post.slug} post={post} />
-                        ))}
-                      </div>
-                    ))
+                    yearPosts.map((post) => <PostListItem key={post.slug} post={post} />)
                   )}
                 </div>
               </div>
