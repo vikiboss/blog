@@ -12,7 +12,7 @@ tags:
   - 'QQ音乐'
 ---
 
-> 更新于 2026/9/1，快速领取: [网易云][ncm] | [QQ 音乐][qqm]
+> 更新于 2026/10/1，快速领取: [网易云][ncm] | [QQ 音乐][qqm]
 
 网易云音乐和 QQ 音乐都支持会员分享，在到达一定等级后，每个月都能分享几张体验卡给别人。我两个平台的会员体验卡都没地方用，已经浪费好几年了。与其让它过期失效，不如直接挂出来让有需要的朋友自取。
 
@@ -44,6 +44,7 @@ QQ 音乐固定每月 10 张，每张 3 天，先到先得，领完为止。
 
 ## 更新记录
 
+- 2026-10-01：十月已更新。
 - 2026-09-01：九月已更新。
 - 2026-08-01：八月已更新。
 - 2026-07-01：七月已更新。
@@ -52,5 +53,5 @@ QQ 音乐固定每月 10 张，每张 3 天，先到先得，领完为止。
 - 2026-04-02：四月已更新。
 - 2026-03-18：发布文章，三月已更新。
 
-[ncm]: https://y.music.163.com/g/vip-invite-cashier/radsjl427?app_version=9.5.70&userid=5127559361&token=80C08090540271EB59CBC4C0F9D32D944A6575CDC0D91BB5D0765B22358F646E&dlt=0846&qq_aio_chat_type=3
-[qqm]: https://y.qq.com/m/basic/client/experience_card/index.html?cardid=dab1aoe3deas07kaonbg&hosteuin=oK6PoK-F7eSkNn%2A%2A&hostName=Viki&ADTAG=yy_gnyy_hytyk&qq_aio_chat_type=3&from=share
+[ncm]: https://y.music.163.com/g/vip-invite-cashier/radsjl335?app_version=9.6.05&userid=5127559361&token=ECB224E5EDD134749D74F1AE9554EE6B87B10815887664EC71E90359C7F10908&dlt=0846&qq_aio_chat_type=3
+[qqm]: https://y.qq.com/m/basic/client/experience_card/index.html?cardid=dauq2u7cgc6gg51inqd0&hosteuin=oK6PoK-F7eSkNn%2A%2A&hostName=Viki&ADTAG=yy_gnyy_hytyk&qq_aio_chat_type=3&from=share
