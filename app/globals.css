@@ -331,3 +331,7 @@ html.dark .spoiler:focus {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+.font-case {
+  font-feature-settings: 'case' on;
+}

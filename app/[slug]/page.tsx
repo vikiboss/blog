@@ -134,7 +134,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
             <div className="mt-8 space-y-3 sm:mt-12 sm:space-y-4">
               <ViewTransition name={`post-title-${post.slug}`} default="transform">
-                <h1 className="text-text-primary text-2xl leading-tight font-bold sm:text-3xl md:text-4xl lg:text-5xl">
+                <h1 className="font-case text-text-primary text-2xl leading-tight font-bold sm:text-3xl md:text-4xl lg:text-5xl">
                   {post.title}
                 </h1>
               </ViewTransition>
