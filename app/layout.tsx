@@ -110,7 +110,7 @@ export default function RootLayout({
           <meta name="baidu-site-verification" content={siteConfig.seo.baidu} />
         )}
       </head>
-      <body className="bg-bg-primary text-text-primary font-sans antialiased">
+      <body className="font-case bg-bg-primary text-text-primary font-sans antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
