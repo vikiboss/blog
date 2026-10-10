@@ -150,11 +150,11 @@ export function Header() {
               </span>
             </button>
             {isMoreOpen && (
-              <div className="bg-bg-primary border-border-quaternary absolute top-full right-0 mt-1 min-w-25 rounded-md border py-2 font-medium text-nowrap shadow-sm">
+              <div className="bg-bg-primary border-border-tertiary absolute top-full right-0 mt-1 min-w-25 rounded-md border font-medium text-nowrap shadow-sm">
                 <Link
                   key={pages.mioSays.slug}
                   href={pages.mioSays.slug}
-                  className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.mioSays.title}
@@ -165,7 +165,7 @@ export function Header() {
                     <Link
                       key={page.slug}
                       href={page.slug}
-                      className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                      className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                       onClick={() => {
                         setIsMoreOpen(false)
                       }}
@@ -177,7 +177,7 @@ export function Header() {
                 <Link
                   key={pages.about.slug}
                   href={pages.about.slug}
-                  className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.about.title}
@@ -187,7 +187,7 @@ export function Header() {
 
                 <Link
                   href={pages.friends.slug}
-                  className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.friends.title}
@@ -195,7 +195,7 @@ export function Header() {
 
                 <a
                   href={pages.messages.slug}
-                  className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.messages.title}
@@ -203,7 +203,7 @@ export function Header() {
 
                 <a
                   href={pages.reading.slug}
-                  className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.reading.title}
@@ -214,7 +214,7 @@ export function Header() {
                   <a
                     href={siteConfig.author.github}
                     target="_blank"
-                    className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                    className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                     onClick={() => setIsMoreOpen(false)}
                   >
                     GitHub
@@ -223,7 +223,7 @@ export function Header() {
                   <a
                     href={siteConfig.links.rss}
                     target="_blank"
-                    className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                    className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                     onClick={() => setIsMoreOpen(false)}
                   >
                     RSS
@@ -232,7 +232,7 @@ export function Header() {
                   <a
                     href={siteConfig.links.travellings}
                     target="_blank"
-                    className={cn('hover:bg-bg-quaternary block px-4 py-2')}
+                    className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
                     onClick={() => setIsMoreOpen(false)}
                   >
                     开往 · 友链接力
