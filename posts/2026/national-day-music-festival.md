@@ -96,7 +96,7 @@ Mio 的一位亲友提前从上海飞回了成都，甚是想念四川地道实�
 
 晚上，去了我们之前看到的一家实惠的社区火锅店。双人餐不过百，菜品种类多分量也多，吃的很尽兴。
 
-[成都的社区火锅店](https://image.viki.moe/blog/music-fest/16a625.jpeg)
+![成都的社区火锅店](https://image.viki.moe/blog/music-fest/16a625.jpeg)
 
 ## 10 月 3 日，音乐节
 
