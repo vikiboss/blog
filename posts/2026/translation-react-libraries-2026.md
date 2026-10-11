@@ -1,6 +1,6 @@
 ---
 title: '[译] 2026 年 React 核心库怎么选'
-date: 2026-10-16
+date: 2026-10-11
 topic: '技术'
 excerpt: '介绍 2026 年值得了解的 React 核心库、常见的基础组件。'
 original: false
