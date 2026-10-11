@@ -1,5 +1,13 @@
 [
   {
+    "id": "232",
+    "date": "2026-10-11T12:29:22+08:00",
+    "content": "今日份快乐是美团给的 😛",
+    "images": [
+      "https://image.viki.moe/blog/viki/be72f0.jpeg"
+    ]
+  },
+  {
     "id": "231",
     "date": "2026-10-10T08:45:21+08:00",
     "content": "Deno 团队 [加入](https://blog.cloudflare.com/deno-joins-cloudflare/)  Cloudflare，主要推动 Workers 与 Durable Objects 的自托管。不知道加入 CF 后， Deno 项目本身的路线会不会发生大变化。"
