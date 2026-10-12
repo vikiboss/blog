@@ -19,10 +19,10 @@ export function CS2Inventory({ id, items }: CS2InventoryProps) {
     return (
       <section className="space-y-4">
         <h2 className="text-text-primary text-sm font-semibold tracking-wider uppercase" id={id}>
-          CS2 库存
+          Counter-Strike 2 库存
         </h2>
         <p className="text-text-secondary text-sm">
-          暂时找不到 {siteConfig.author.name} 的 CS2 库存数据
+          暂时找不到 {siteConfig.author.name} 的 Counter-Strike 2 库存数据
         </p>
       </section>
     )

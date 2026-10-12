@@ -75,8 +75,8 @@ export function CS2InventoryClient({ id, items }: CS2InventoryClientProps) {
     <>
       {/* 标题行 */}
       <div className="flex items-center justify-between">
-        <h2 className="text-text-primary text-sm font-semibold tracking-wider uppercase" id={id}>
-          CS2 库存
+        <h2 className="text-text-primary text-sm font-semibold tracking-wider" id={id}>
+          Counter-Strike 2 库存
         </h2>
         <span className="text-text-secondary text-xs">
           {groupedAndSortedItems.length} 种物品 · 共 {items.length} 件

@@ -65,7 +65,7 @@ export function HokSkinsClient({ id, data }: HokSkinsClientProps) {
       {/* 标题行 */}
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-2">
-          <h2 className="text-text-primary text-sm font-semibold tracking-wider uppercase" id={id}>
+          <h2 className="text-text-primary text-sm font-semibold tracking-wider" id={id}>
             王者皮肤
           </h2>
           <span className="text-text-tertiary text-xs">

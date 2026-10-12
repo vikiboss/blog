@@ -39,7 +39,7 @@ export function SteamGameListClient({ id, libraryGames, recentGames }: SteamGame
     <>
       {/* 标题行和视图切换按钮 */}
       <div className="flex items-center justify-between">
-        <h2 className="text-text-primary text-sm font-semibold tracking-wider uppercase" id={id}>
+        <h2 className="text-text-primary text-sm font-semibold tracking-wider" id={id}>
           Steam 游戏
         </h2>
         <div className="flex items-center gap-2">
