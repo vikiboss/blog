@@ -348,7 +348,7 @@ export function StaticTableOfContentsPC({
     <>
       {/* PC 端 TOC - 固定在右侧 */}
       <nav
-        className="fixed top-1/2 right-4 z-10 hidden max-h-[70vh] w-60 -translate-y-1/2 overflow-y-auto opacity-36 transition-all! hover:opacity-100 xl:block"
+        className="fixed top-1/2 right-4 z-10 hidden max-h-[72vh] w-60 -translate-y-1/2 overflow-y-auto opacity-36 transition-all! hover:opacity-100 xl:block"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         aria-label="文章目录"
