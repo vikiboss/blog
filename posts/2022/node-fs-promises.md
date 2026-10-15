@@ -51,14 +51,14 @@ node -v
 
 **升级方法：**
 
-- **Windows/macOS：** 访问 [Node.js 官网](https://nodejs.org/) 下载最新的 LTS 版本
-- **使用 nvm（推荐）：** 如果你安装了 nvm，可以直接运行：
+- **Windows/macOS**：访问 [Node.js 官网](https://nodejs.org/) 下载最新的 LTS 版本
+- **使用 nvm（推荐）**：如果你安装了 nvm，可以直接运行：
   ```bash
   nvm install --lts
   nvm use --lts
   ```
 
-**注意：** Windows 7 及以下系统不支持 Node.js 14 及更高版本，如果你还在用老系统的话，请参考方案二。
+**注意**：Windows 7 及以下系统不支持 Node.js 14 及更高版本，如果你还在用老系统的话，请参考方案二。
 
 ### 方案二：修改引用方式
 
