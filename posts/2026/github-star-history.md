@@ -110,3 +110,9 @@ GET /repos/{owner}/{repo}/stargazers/history
 最后，再附一张热门项目的星星历史图供对比参考。
 
 [![热门项目星星历史](https://api.star-history.com/chart?repos=react/react%2Cvuejs/core%2Cvuejs/vue%2Ctorvalds/linux%2Copenclaw/openclaw%2Cdeepseek-ai/deepseek-harness%2Cmicrosoft/vscode%2Cnousresearch/hermes-agent%2Cthealgorithms/python%2Cvercel/next.js%2Cgolang/go&type=date&legend=top-left)](https://www.star-history.com/?repos=react%2Freact%2Cvuejs%2Fcore%2Cvuejs%2Fvue%2Ctorvalds%2Flinux%2Copenclaw%2Fopenclaw%2Cdeepseek-ai%2Fdeepseek-harness%2Cmicrosoft%2Fvscode%2Cnousresearch%2Fhermes-agent%2Cthealgorithms%2Fpython%2Cvercel%2Fnext.js%2Cgolang%2Fgo&type=date&legend=top-left)
+
+---
+
+## 2026-10-15 更新
+
+GitHub 专门发了篇文章 [From 2,500 requests to 24: Rebuilding star history without the stargazers](https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/) 来讲述星标 API 重构的历程。
