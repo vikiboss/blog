@@ -68,8 +68,8 @@ async function getAllSearchItems(): Promise<SearchIndexItem[]> {
 
   for (const post of posts) {
     items.push({
-      id: `${post.original ? 'post' : 'post'}-${post.slug}`,
-      type: post.original ? 'post' : 'tech',
+      id: `${post.isOriginal ? 'post' : 'post'}-${post.slug}`,
+      type: post.isOriginal ? 'post' : 'tech',
       title: post.title,
       excerpt: post.excerpt,
       content: cleanMarkdown(post.content),

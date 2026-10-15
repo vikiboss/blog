@@ -3,7 +3,7 @@ title: '[译] 我们还需要状态管理库吗？'
 date: 2026-08-28
 topic: '前端'
 excerpt: '深入主流状态管理库的实现原理，然后自己动手写一个。'
-original: false
+isOriginal: false
 author: 'Neciu Dan'
 tags:
   - 'React'

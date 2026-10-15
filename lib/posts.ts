@@ -36,7 +36,7 @@ export interface PostMetadata {
   /** 文章是否置顶，默认为 false */
   top: boolean
   /** 文章是否原创，默认为 true */
-  original: boolean
+  isOriginal: boolean
   /** 文章置顶图片 URL，frontmatter 中的 top_image，默认为 undefined */
   topImage: string | undefined
 }
@@ -135,7 +135,7 @@ export async function getAllPosts(
         draft: data.draft || false,
         archived: data.archived || false,
         top: data.top || false,
-        original: data.original !== undefined ? data.original : true,
+        isOriginal: data.isOriginal !== undefined ? data.isOriginal : true,
         topImage: data.top_image || undefined,
         ...(withContent ? { content } : {}),
       }
@@ -149,7 +149,7 @@ export async function getAllPosts(
       : allPostsData.filter((post) => !post.draft && !post.archived)
 
   return filteredPosts
-    .filter((e) => isOriginal === undefined || e.original === isOriginal)
+    .filter((e) => isOriginal === undefined || e.isOriginal === isOriginal)
     .toSorted((a, b) => (a.date < b.date ? 1 : -1))
 }
 

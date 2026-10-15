@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { cn } from 'cn'
 import { PostDate } from './post-date'
 import { DraftBadge } from './draft-badge'
-import { ReadingTime } from './reading-time'
 import { ViewTransition } from 'react'
 
 import type { PostMetadata } from '@/lib/posts'

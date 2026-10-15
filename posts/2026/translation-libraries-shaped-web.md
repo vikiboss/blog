@@ -3,7 +3,7 @@ title: '[译] 从库到标准：9 次 Web 平台的演进轨迹'
 date: 2026-05-19
 topic: '前端'
 excerpt: '前端库对 Web 平台的几次关键影响。'
-original: false
+isOriginal: false
 author: 'Jad Joubran'
 tags:
   - 'Web Platform'

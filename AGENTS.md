@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Code Agent when working with code in this repository.
 
 Viki 的个人博客，基于 Next.js 16 (App Router) + React 19 + Tailwind CSS v4 构建。纯 Markdown（不是 MDX）+ unified 生态处理内容。
 
@@ -12,8 +12,6 @@ pnpm build            # 构建生产版本
 pnpm type-check       # TypeScript 类型检查
 pnpm lint             # ESLint 检查
 pnpm format           # Prettier 格式化
-pnpm test             # 运行 vitest 单元测试
-pnpm test -- <file>   # 运行单个测试文件
 ```
 
 ## 架构概览
@@ -58,17 +56,6 @@ pnpm test -- <file>   # 运行单个测试文件
 - **Server Actions** — `actions/` 目录
 - `_components` 内部互引用 `./` 相对路径，引用公共模块用 `@/` alias
 
-### 关键工具模块
-
-| 模块 | 用途 |
-|---|---|
-| `lib/cn.ts` | `clsx` + `tailwind-merge` 合并类名，**必须使用**，禁止模板字符串拼接 |
-| `lib/dayjs.ts` | dayjs 实例（相对时间 + 中文本地化） |
-| `lib/seo.ts` | JSON-LD 结构化数据 + canonical URL |
-| `lib/text-formatter.ts` | pangu 盘古之白 + 名词大小写规范化 |
-| `lib/posts.ts` | 文章读取 + Jaccard 推荐算法 |
-| `lib/reading-time.ts` | 阅读时间（中英混合 400 字/分钟） |
-| `lib/word-count.ts` | 字数统计 |
 
 ### 页面路由
 

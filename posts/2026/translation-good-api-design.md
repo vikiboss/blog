@@ -3,7 +3,7 @@ title: '[译] 我所知道的优秀 API 设计'
 date: 2026-07-17
 topic: '技术'
 excerpt: 'API 设计应优先考虑易用性、稳定性和向后兼容性。'
-original: false
+isOriginal: false
 author: 'Sean Goedecke'
 tags:
   - '开发'

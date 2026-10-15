@@ -3,7 +3,7 @@ title: '[译] 论 JavaScript 的怪异之处'
 date: 2026-09-18
 topic: '前端'
 excerpt: 'JavaScript 真的太怪了！'
-original: false
+isOriginal: false
 author: 'Konstantin Wohlwend'
 tags:
   - 'JavaScript'
