@@ -416,11 +416,11 @@ function Counter() {
 
 没有 action，没有 setter，也没有 selector，你在事件处理函数里写 `++state.count`，对应的组件就会更新。三个机制让这得以运作，它们层层叠加。
 
-**写代理。** `proxy()` 把你的对象包进一个 `Proxy`，它的 `set` 陷阱在每次变更时触发，并递归地包裹嵌套对象，所以 `state.user.address.city = 'Berlin'` 也能被捕获。
+**写代理**。`proxy()` 把你的对象包进一个 `Proxy`，它的 `set` 陷阱在每次变更时触发，并递归地包裹嵌套对象，所以 `state.user.address.city = 'Berlin'` 也能被捕获。
 
-**快照。** React 无法安全地渲染一个可能在渲染中途变化的可变对象，所以 Valtio 维护了第二份表示。`snapshot(state)` 产生一个不可变的、冻结的副本。
+**快照**。React 无法安全地渲染一个可能在渲染中途变化的可变对象，所以 Valtio 维护了第二份表示。`snapshot(state)` 产生一个不可变的、冻结的副本。
 
-**读代理。** `useSnapshot` 并不直接把快照交给你。它把快照包进 *另一个* 代理，一个来自 `proxy-compare` 包的读取追踪代理，在你的组件渲染期间，这个代理记录你触碰的每一条属性路径，所以它知道组件读了 `snap.count`，完全没碰过 `snap.text`。
+**读代理**。`useSnapshot` 并不直接把快照交给你。它把快照包进 *另一个* 代理，一个来自 `proxy-compare` 包的读取追踪代理，在你的组件渲染期间，这个代理记录你触碰的每一条属性路径，所以它知道组件读了 `snap.count`，完全没碰过 `snap.text`。
 
 在下一次 store 变更时，Valtio 只在你访问过的路径上比较新旧快照，如果你读的东西没有变化，你的组件就不重渲染。
 

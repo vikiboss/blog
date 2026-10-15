@@ -50,7 +50,7 @@ allButtons.forEach((btn) => {
 
 `querySelector` 返回第一个匹配项（或者 `null`），`querySelectorAll` 返回包含所有匹配项的 `NodeList`。
 
-**注意：** Chrome 和 Firefox 的 DevTools 会在控制台里提供 `$` 和 `$$` 作为这两个 API 的快捷方式。它们很适合临时调试，但也要清楚它们的边界：
+**注意**：Chrome 和 Firefox 的 DevTools 会在控制台里提供 `$` 和 `$$` 作为这两个 API 的快捷方式。它们很适合临时调试，但也要清楚它们的边界：
 
 - 它们只在 DevTools 控制台的顶层作用域可用，不能在页面本身的 JavaScript 代码里用。
 - 它们不能在回调函数里使用。

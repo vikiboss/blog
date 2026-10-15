@@ -93,7 +93,7 @@ CI/CD 用的 [GitHub Actions](https://github.com/features/actions)，代码提�
 pnpm add smee-it
 ```
 
-**相关链接：**
+**相关链接**：
 
 - [GitHub 仓库](https://github.com/vikiboss/smee-it) - 查看源码、提 Issue
 - [npm 包](https://www.npmjs.com/package/smee-it) - 查看版本历史和使用统计

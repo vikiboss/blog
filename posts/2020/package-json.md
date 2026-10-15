@@ -86,7 +86,7 @@ Node.js 项目遵循**模块化**架构，`package.json` 文件是用来**描述
 
 > 例如：博客项目可能还需要 `"title": "Viki's Blog"` 类似的字段。
 
-**其他常见字段参考：**`keywords`、`contributors`、`homepage`、`preferGlobal`、`style`、`bin`、`bugs`、`config`、`browser`、`engines`、`man`、`peerDependencies`
+**其他常见字段参考**：`keywords`、`contributors`、`homepage`、`preferGlobal`、`style`、`bin`、`bugs`、`config`、`browser`、`engines`、`man`、`peerDependencies`
 
 ## 脚本（scripts）字段
 

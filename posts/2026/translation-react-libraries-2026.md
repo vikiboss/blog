@@ -50,7 +50,7 @@ Next.js 最初主要用于服务端渲染（Web 应用），如今也可用于�
 
 还有一点值得在新项目中留意：[React Compiler](https://react.dev/blog/2025/10/07/react-compiler-1) 于 2025 年 10 月达到 1.0 版本，并已得到 Vite、Next.js 和 Expo 的开箱支持。它会自动对组件和 Hooks 进行记忆化优化，因此大多数手动使用 `useMemo` 和 `useCallback` 的场景都可以减少。
 
-**推荐：**
+**推荐**：
 
 - 面向客户端渲染的 React 应用：Vite
 - 面向全栈开发的 React 应用：Next.js（同时值得关注新兴的 TanStack Start）
@@ -62,7 +62,7 @@ Next.js 最初主要用于服务端渲染（Web 应用），如今也可用于�
 
 如果你要开发多个相互依赖的 React 应用，或者多个应用需要共享一组自定义 UI 组件，可以了解一下 monorepo（单体仓库）模式。npm 和 pnpm 都通过 workspaces 支持 monorepo，其中 pnpm 尤其适合这种场景。再搭配 [Turborepo](https://turborepo.org/) 等 monorepo 流水线工具，开发体验会更完善。对于规模更大或包含多种语言的项目，[Nx](https://nx.dev/) 提供了功能更全面的 monorepo 平台。
 
-**推荐：**
+**推荐**：
 
 - 选择一种包管理器，并在项目中保持一致。
   - 默认且最普及：npm
@@ -83,7 +83,7 @@ React 内置了两个用于管理本地状态的 Hook：[useState](https://www.r
 
 还有一种值得了解的模式：将筛选条件、标签页和分页等状态保存在 URL 中。[nuqs](https://nuqs.dev/) 提供了带类型的搜索参数，以及类似 Hook 的 API。它与具体框架无关，Sentry、Supabase、Vercel 和 Clerk 都在使用它。
 
-**推荐：**
+**推荐**：
 
 - 使用 `useState`/`useReducer` 管理组件内部或共享状态。
 - 按需使用 `useContext`，管理少量全局状态。
@@ -103,7 +103,7 @@ TanStack Query 最初是为消费 [REST API](https://www.robinwieruch.de/node-ex
 
 最后，如果你使用的（元）框架支持 React Server Components/Server Functions（RSC/RSF），例如 Next.js，也可以直接利用它们获取数据。你可以在服务端获取数据，再将数据传递给客户端，从而避免使用客户端数据获取库。
 
-**推荐：**
+**推荐**：
 
 - 服务端数据获取：
   - 如果所用的（元）框架支持，优先考虑 React Server Components/Functions。
@@ -124,7 +124,7 @@ React Router 和 TanStack Router（搭配 TanStack Start）都在推进对 React
 
 如果你刚开始学习 React，还不急着在项目中引入路由器，可以先尝试了解 [React 的条件渲染](https://www.robinwieruch.de/conditional-rendering-react/)。条件渲染不能取代路由，但能帮助你理解如何在页面层级切换组件。
 
-**推荐：**
+**推荐**：
 
 - 服务端路由：Next.js、React Router（框架模式）或 TanStack Start。
 - 客户端路由：
@@ -189,7 +189,7 @@ const Headline = ({ title }) => <BlueHeadline>{title}</BlueHeadline>
 
 此外，React 19 原生支持 `<style>` 的优先级处理和去重，缓解了 CSS-in-JS 过去试图解决的一些问题。因此，纯 CSS Modules 或 Tailwind CSS 比以往更值得考虑。
 
-**推荐：**
+**推荐**：
 
 - Utility-First CSS（最流行），例如 Tailwind CSS。
 - CSS-in-CSS，例如 CSS Modules。
@@ -261,7 +261,7 @@ React 生态中最受欢迎的表单库无疑是 [React Hook Form](https://react
 
 在现有代码库中，你可能仍会遇到 [Formik](https://github.com/jaredpalmer/formik) 或 [React Final Form](https://final-form.org/react)，但两者目前实际上都已缺乏维护，因此不建议用于新项目。
 
-**推荐：**
+**推荐**：
 
 - React Hook Form，并结合 Zod 进行校验。
 
@@ -275,7 +275,7 @@ React 生态中最受欢迎的表单库无疑是 [React Hook Form](https://react
 
 如果你更倾向于使用稳定、单一二进制文件的工具链，[Biome](https://biomejs.dev/) v2 可以在一个工具中完成代码检查和格式化，支持类型感知规则，并提供稳定的插件 API。
 
-**推荐：**
+**推荐**：
 
 - 面向未来的新项目：oxlint + oxfmt，等 tsgo 稳定后，可用它加速类型检查。
 - 想立即使用稳定的单一二进制工具：Biome v2。
@@ -333,7 +333,7 @@ React 应用测试的基础是测试框架，例如推荐使用的 [Vitest](http
 
 对于 React 端到端（E2E）测试，2026 年最明确的默认选择是 [Playwright](https://playwright.dev/)，它在新项目中的采用率占据主导地位。如果团队已经投入使用 [Cypress](https://www.robinwieruch.de/react-testing-cypress/) 或者更看重它的组件测试开发体验，那么 Cypress 依然是不错的选择。两种工具都可以自动化并模拟浏览器中的用户操作，从用户视角验证 React 应用的行为是否符合预期。
 
-**推荐：**
+**推荐**：
 
 - 单元测试/集成测试：Vitest + React Testing Library（最常见的组合）。
 - 端到端测试：Playwright 或 Cypress。
