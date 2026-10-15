@@ -1,5 +1,10 @@
 [
   {
+    "id": "234",
+    "date": "2026-10-15T11:01:06+08:00",
+    "content": "VS Code 在中文等 CJK 字符下自动换行排版失效，可以通过调整默认的换行策略解决，即修改 VS Code 的配置为：\n\n```json\n{\n  \"editor.wordWrap\": \"on\",\n  \"editor.wrappingStrategy\": \"advanced\"\n}\n```\n\nVS Code 在 [1.42](https://code.visualstudio.com/updates/v1_42) 的更新里提到，默认换行算法（即 `simple`）会假设字符宽度一致，对 CJK 内容非常不友好。后来官方提供了 `advanced`，让宽度计算交给浏览器排版逻辑处理，CJK 下，功能也正常了。\n\n这是个功能可用性问题，虽然牺牲了部分性能，但至少 CJK 文本能够正常识别换行断点了。"
+  },
+  {
     "id": "233",
     "date": "2026-10-13T11:06:41+08:00",
     "content": "服务器部署前可以用 `fallocate -l 10G /var/reserved-space{:bash}` 预留足够救急空间。磁盘满时 `rm` 它可以瞬间释放 10G，让服务快速恢复，并留出足够时间排查根因。但请注意注意这会真实占用空间，不需要时请及时删除。"
