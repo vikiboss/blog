@@ -222,7 +222,7 @@ module.exports = {
 
 ### 启用 webpack-dev-server
 
-webpack-dev-server 本质是一个基于 Node.js 的简单本地 web 服务器，能够在请求的内容发生改变时及时更新（不用手动在浏览器刷新网页）。如果你是 VSCode 用户，笔者更推荐使用 **Live Server 扩展**来达到这个目的。Live Server 的详细使用方式参考[官方文档](https://ritwickdey.github.io/vscode-live-server/)。
+webpack-dev-server 本质是一个基于 Node.js 的简单本地 web 服务器，能够在请求的内容发生改变时及时更新（不用手动在浏览器刷新网页）。如果你是 VSCode 用户，笔者更推荐使用 **Live Server 扩展**来达到这个目的。Live Server 的详细使用方式参考 [官方文档](https://ritwickdey.github.io/vscode-live-server/)。
 
 ##### 安装
 

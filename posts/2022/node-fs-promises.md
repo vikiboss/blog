@@ -51,7 +51,7 @@ node -v
 
 **升级方法：**
 
-- **Windows/macOS：** 访问 [Node.js 官网](https://nodejs.org/)下载最新的 LTS 版本
+- **Windows/macOS：** 访问 [Node.js 官网](https://nodejs.org/) 下载最新的 LTS 版本
 - **使用 nvm（推荐）：** 如果你安装了 nvm，可以直接运行：
   ```bash
   nvm install --lts

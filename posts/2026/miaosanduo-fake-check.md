@@ -112,7 +112,7 @@ tags:
 
 ![正品直接扫二维码，先进入上传页，再次上传才出结果](https://image.viki.moe/blog/miaosanduo/b48782.png)
 
-如果是 **假冒的妙三多，扫码后「会」立即出检验结果**。并且检验网址的一级域名为「veirmar.com」。（相比官方域名 veima.com 多了两个 `r`）
+如果是**假冒的妙三多，扫码后「会」立即出检验结果**。并且检验网址的一级域名为「veirmar.com」。（相比官方域名 veima.com 多了两个 `r`）
 
 ![假冒的妙三多，扫码后「会」立即出检验结果](https://image.viki.moe/blog/miaosanduo/7b0310.png)
 

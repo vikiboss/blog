@@ -53,9 +53,9 @@ tags:
 
 刚才第一个方案推荐的浏览器支持打开本地 SWF 文件进行播放。其他浏览器如果可以打开网页的 Flash 游戏，那么你也可以直接用浏览器打开本地的 SWF 文件，一样能播放和游玩。
 
-或者你可以使用方案 3 下载纯净版 Flash，注意安装时勾选独立版本的 Flash Player。这是 Adobe 单独发行的单文件[可执行程序](https://adobe.com/support/flashplayer/debug_downloads.html)，可以直接打开本地或互联网的 SWF 文件进行播放。
+或者你可以使用方案 3 下载纯净版 Flash，注意安装时勾选独立版本的 Flash Player。这是 Adobe 单独发行的单文件 [可执行程序](https://adobe.com/support/flashplayer/debug_downloads.html)，可以直接打开本地或互联网的 SWF 文件进行播放。
 
-不过这个官网页面显示已结束了它的使命，不能直接从官网下载，你可以到这个[归档页面](https://web.archive.org/web/20210112063313/http://fpdownload.adobe.com/get/flashplayer/pdc/32.0.0.465/install_flash_player.exe)下载单独的 Adobe Flash Player。如果无法安装，请尝试将系统时间调到 2020 年绕过限制。
+不过这个官网页面显示已结束了它的使命，不能直接从官网下载，你可以到这个 [归档页面](https://web.archive.org/web/20210112063313/http://fpdownload.adobe.com/get/flashplayer/pdc/32.0.0.465/install_flash_player.exe) 下载单独的 Adobe Flash Player。如果无法安装，请尝试将系统时间调到 2020 年绕过限制。
 
 当然，本文介绍了这么多方案，最推荐的还是第一个方案的开源浏览器，支持 Flash 网页游戏和本地 Flash 游戏，一步到位。
 

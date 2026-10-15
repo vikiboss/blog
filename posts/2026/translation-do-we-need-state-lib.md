@@ -30,15 +30,15 @@ tags:
 
 我在之前那篇 [React 组件通信模式](https://neciudan.dev/component-communication-patterns-in-react) 里提到过，状态可以分成几类。
 
-**UI 状态** 是局部的。模态框状态、下拉框选中项、输入框里内容，`useState` 就够了。
+**UI 状态**是局部的。模态框状态、下拉框选中项、输入框里内容，`useState` 就够了。
 
-**服务端状态** 是后端数据的缓存副本，被组件当作缓存层复用，如今归 [TanStack Query](https://tanstack.com/query/latest) 管。
+**服务端状态**是后端数据的缓存副本，被组件当作缓存层复用，如今归 [TanStack Query](https://tanstack.com/query/latest) 管。
 
-**URL 状态** 是应用某一时刻的快照，可以存进 URL 分享，通常交给 [nuqs](https://nuqs.dev/) 这类库。
+**URL 状态**是应用某一时刻的快照，可以存进 URL 分享，通常交给 [nuqs](https://nuqs.dev/) 这类库。
 
-**全局状态** 是在会话期间不变的，如主题、货币、地区、语言等，应该放在 React Context 里。
+**全局状态**是在会话期间不变的，如主题、货币、地区、语言等，应该放在 React Context 里。
 
-**复杂的共享客户端状态** 是剩下的部分。我之前建议用 [Zustand](https://zustand.docs.pmnd.rs/) 这样的轻量状态库。
+**复杂的共享客户端状态**是剩下的部分。我之前建议用 [Zustand](https://zustand.docs.pmnd.rs/) 这样的轻量状态库。
 
 那么，如果我们把状态都用上述方式放到了正确位置，最后的部分，还需要状态管理库吗？不妨让我们先看看那些知名状态库底层是怎么做的，然后自己动手写一个，答案自然就有了。
 
@@ -474,7 +474,7 @@ React 用回调调用 `subscribe`，store 承诺在任何东西变化时调用�
 
 服务器在没有浏览器、没有活的 store 的情况下把你的应用渲染成 HTML，浏览器随后下载那份 HTML，React 执行 hydration，把事件处理函数挂到已有的标记上，同时在内存中重新渲染整棵树并检查它是否匹配。（关于 hydration 的更多内容，看看我那篇深度文章 [Different hydration strategies](https://neciudan.dev/hydration-and-rendering-strategies)。）
 
-但这个 hook 存在的真正原因，那个你无法在自己的代码里、在 React 之外干净解决的问题，是 **撕裂（tearing）**。
+但这个 hook 存在的真正原因，那个你无法在自己的代码里、在 React 之外干净解决的问题，是**撕裂（tearing）**。
 
 从 React 18 开始，渲染是并发的，意味着 React 可以在渲染到树中间时暂停，去处理更紧急的事情，稍后再继续。
 

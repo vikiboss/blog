@@ -15,7 +15,7 @@ tags:
 
 CSS 从诞生到现在，经历了多个发展阶段，每个阶段都在尝试解决不同的问题：
 
-- **手写原生 CSS** - 使用 [BEM 命名法](http://getbem.com/introduction/)等规范来约束命名
+- **手写原生 CSS** - 使用 [BEM 命名法](http://getbem.com/introduction/) 等规范来约束命名
 - **预处理器时代** - [Sass](https://sass-lang.com/)、[Less](https://lesscss.org/) 和 [Stylus](https://stylus-lang.com/) 等工具让 CSS 编写更高效
 - **后处理器出现** - [PostCSS](https://postcss.org/) 以插件的方式提供各种功能，如 [autoprefixer](https://github.com/postcss/autoprefixer) 自动添加浏览器前缀
 - **模块化方案** - CSS Modules 需要搭配 [webpack](https://webpack.js.org/)、[Gulp](https://gulpjs.com/) 或 [Parcel](https://parceljs.org/) 等构建工具使用
@@ -60,7 +60,7 @@ BEM 的核心规则如下：
 
 ### CSS Modules
 
-CSS Modules 本质上还是 CSS 文件，但需要配合构建工具（如 webpack）使用。它为原生 CSS 增加了很多实用的[特性](https://github.com/css-modules/css-modules)：
+CSS Modules 本质上还是 CSS 文件，但需要配合构建工具（如 webpack）使用。它为原生 CSS 增加了很多实用的 [特性](https://github.com/css-modules/css-modules)：
 
 - **作用域控制** - 默认样式是局部作用域，也可以显式声明全局样式
 - **模块化导入** - 可以像 JS 模块一样被导入和使用

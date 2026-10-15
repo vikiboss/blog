@@ -83,7 +83,7 @@ client.start()
 
 CI/CD 用的 [GitHub Actions](https://github.com/features/actions)，代码提交后自动跑测试，打 tag 就自动发布到 [npm](https://www.npmjs.com/package/smee-it)。
 
-需要注意的是，smee.io 毕竟是公开服务，任何人知道你的频道 URL 就能看到所有数据，甚至可以往里面发伪造消息。所以这个库主要适合本地开发调试、CI/CD 测试或者开源项目。如果是敏感项目，建议[自己部署 smee 服务器](https://github.com/probot/smee.io#deploy-your-own)，或者一定要做签名验证。
+需要注意的是，smee.io 毕竟是公开服务，任何人知道你的频道 URL 就能看到所有数据，甚至可以往里面发伪造消息。所以这个库主要适合本地开发调试、CI/CD 测试或者开源项目。如果是敏感项目，建议 [自己部署 smee 服务器](https://github.com/probot/smee.io#deploy-your-own)，或者一定要做签名验证。
 
 ## 结语
 

@@ -95,7 +95,7 @@ Rolldown 文档中的 [为什么还需要打包器？](https://rolldown.rs/in-de
 
 #### 不止是 ES 模块
 
-有些打包器不仅打包 JavaScript 模块。Webpack 率先通过所谓的「loader」实现了在 JavaScript 中 [导入其他资源类型](https://webpack.js.org/concepts/#loaders)。某种程度上，类似的功能已经进入了 Web 标准。通过 import attribute 语法导入 JSON，自 2025 年初起已获得所有浏览器支持。CSS module scripts 在 Chrome/Edge 和 Firefox 中可用。导入文本的功能最近也在 [Firefox 153](https://www.firefox.com/en-US/firefox/153.0beta/releasenotes/#:~:text=Developers%20can%20now%20use%20the%20text%20import%20attribute%20to%20import%20text%20files%20using%20the%20module%20system.) 中落地。此外还有一个 [导入字节](https://github.com/tc39/proposal-import-bytes)的规范，但尚未在浏览器中实现。
+有些打包器不仅打包 JavaScript 模块。Webpack 率先通过所谓的「loader」实现了在 JavaScript 中 [导入其他资源类型](https://webpack.js.org/concepts/#loaders)。某种程度上，类似的功能已经进入了 Web 标准。通过 import attribute 语法导入 JSON，自 2025 年初起已获得所有浏览器支持。CSS module scripts 在 Chrome/Edge 和 Firefox 中可用。导入文本的功能最近也在 [Firefox 153](https://www.firefox.com/en-US/firefox/153.0beta/releasenotes/#:~:text=Developers%20can%20now%20use%20the%20text%20import%20attribute%20to%20import%20text%20files%20using%20the%20module%20system.) 中落地。此外还有一个 [导入字节](https://github.com/tc39/proposal-import-bytes) 的规范，但尚未在浏览器中实现。
 
 ```js
 import json from "./data.json" with { type: "json" };
@@ -138,7 +138,7 @@ document.adoptedStyleSheets.push(styles);
 </script>
 ```
 
-这很好用，但缺点是[你无法控制服务的可用性](https://www.theverge.com/2024/4/12/24128276/open-source-unpkg-cdn-down)。esm.sh 和 UNPKG 都是很棒的项目，但从长远看，它们可能会变得无人维护（比如 [Skypack](https://github.com/skypackjs/skypack-cdn/issues/362)），或存在安全隐患（比如 [polyfill.io](https://simonwillison.net/2024/Jun/25/polyfill-supply-chain-attack/)），甚至直接下线（比如 RawGit）。
+这很好用，但缺点是 [你无法控制服务的可用性](https://www.theverge.com/2024/4/12/24128276/open-source-unpkg-cdn-down)。esm.sh 和 UNPKG 都是很棒的项目，但从长远看，它们可能会变得无人维护（比如 [Skypack](https://github.com/skypackjs/skypack-cdn/issues/362)），或存在安全隐患（比如 [polyfill.io](https://simonwillison.net/2024/Jun/25/polyfill-supply-chain-attack/)），甚至直接下线（比如 RawGit）。
 
 如果你想自己托管依赖呢？Django 框架的联合创始人 Simon Willison 在 [博客中](https://simonwillison.net/2024/Nov/23/without-a-build-system/) 写道：
 
@@ -181,7 +181,7 @@ document.adoptedStyleSheets.push(styles);
 
 手动编写 import map 可能会变得相当复杂，因此有一个工具，[JSPM](https://jspm.org/getting-started#:~:text=JSPM%20makes%20working%20with%20import%20maps%20simpler%20by%20automating%20their%20creation%20and%20management.)，它承诺「通过自动化 import map 的创建和管理，让工作变得更简单」。
 
-Lea Verou，前 W3C 技术架构组成员，曾 [详细撰文](https://lea.verou.me/blog/2026/web-deps/#rawdogging-node_modules%2F-imports)讨论过 Web 依赖问题，并解释了直接使用 `node_modules` 中代码的弊端：
+Lea Verou，前 W3C 技术架构组成员，曾 [详细撰文](https://lea.verou.me/blog/2026/web-deps/#rawdogging-node_modules%2F-imports) 讨论过 Web 依赖问题，并解释了直接使用 `node_modules` 中代码的弊端：
 
 > 首先，直接部署整个 `node_modules` 目录既浪费资源，又存在安全风险。事实上，大多数无服务器托管平台（如 Netlify 或 Vercel）会在构建完成后自动将其从公开部署文件中移除。其次，这违反了封装原则：包内部的路径通常被视为包本身的实现细节。
 

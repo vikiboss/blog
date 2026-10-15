@@ -34,7 +34,7 @@ React 已经发展了相当长的时间。多年来，围绕它形成了庞大�
 
 React 初学者经常会问的第一个问题是：如何搭建 React 项目？可选工具很多，挑选合适的工具可能让人无从下手。在 React 社区中，最受欢迎的选择之一是 [Vite](https://vitejs.dev/)。它可以轻松创建使用不同库（例如 React）的项目，也支持按需启用 TypeScript。Vite 的 [性能也非常出色](https://twitter.com/rwieruch/status/1491093471490412547)。
 
-如果你已经熟悉 React，也可以考虑直接使用流行的 React（元）框架，而不是 Vite。[Next.js](https://nextjs.org/) 是广泛使用的选择，它构建于 React 之上，因此掌握 [React 基础知识](https://www.roadtoreact.com/)十分重要。Next.js 内置了许多功能，例如多种渲染方式、基于文件的路由以及 API 路由。
+如果你已经熟悉 React，也可以考虑直接使用流行的 React（元）框架，而不是 Vite。[Next.js](https://nextjs.org/) 是广泛使用的选择，它构建于 React 之上，因此掌握 [React 基础知识](https://www.roadtoreact.com/) 十分重要。Next.js 内置了许多功能，例如多种渲染方式、基于文件的路由以及 API 路由。
 
 Next.js 最初主要用于服务端渲染（Web 应用），如今也可用于静态站点生成，并支持 ISR 等其他渲染模式。Next.js 近年的重要变化是引入了 React Server Components（RSC，React 服务端组件）和 React Server Functions（RSF，React 服务端函数）。自 2023 年以来，它们推动了一场重要的范式转变：将部分 React 组件从客户端移到服务端执行。
 

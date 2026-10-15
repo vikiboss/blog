@@ -60,7 +60,7 @@ allButtons.forEach((btn) => {
 
 ## 2. 声明式 UI：`popovertarget` 和 `command`
 
-这两个属性很有意思，因为它们让你可以 **用 HTML 替代 JavaScript**。
+这两个属性很有意思，因为它们让你可以**用 HTML 替代 JavaScript**。
 
 它们解决的是一个非常具体的问题：以声明式的方式，把一个按钮和某个目标元素连起来。点击按钮，目标元素就显示或隐藏。不需要 `addEventListener`，也不需要手动调用 `.show()` / `.hide()`。
 
@@ -149,7 +149,7 @@ button.classList.replace("is-loading", "is-success") // jQuery 里没有
 
 过去，在 [JavaScript](https://learnjavascript.online/?utm_source=jadjoubran.io/blog) 里做对象深拷贝，通常意味着你要用 Lodash 的 `_.cloneDeep`，或者用那个著名的 `JSON.parse(JSON.stringify(obj))` 技巧 —— 但一旦对象里出现 `Date`、`Map` 或循环引用，这招立刻就失效了。
 
-真正值得强调的转折在于：这个深拷贝算法其实 **早就已经存在于平台内部**。每次你调用 `postMessage`，或者把对象写进 IndexedDB，浏览器都会悄悄用它来复制数据。只是以前，我们没有办法单独调用它。
+真正值得强调的转折在于：这个深拷贝算法其实**早就已经存在于平台内部**。每次你调用 `postMessage`，或者把对象写进 IndexedDB，浏览器都会悄悄用它来复制数据。只是以前，我们没有办法单独调用它。
 
 `structuredClone` 本质上就是平台终于把自己内部用了很多年的能力，正式暴露出来：
 
@@ -217,7 +217,7 @@ console.log(add(2, 3)) // 5
 console.log(PI) // 3.14159
 ```
 
-`import` / `export` 语法本身是全新的：它既不是 CommonJS 的写法，也不是 AMD 的写法。但「模块」这个 **核心概念**，正是这些库和工具先证明了它的必要性，平台才最终跟进。
+`import` / `export` 语法本身是全新的：它既不是 CommonJS 的写法，也不是 AMD 的写法。但「模块」这个**核心概念**，正是这些库和工具先证明了它的必要性，平台才最终跟进。
 
 ## 8. `Temporal`
 
@@ -259,7 +259,7 @@ document.addEventListener("click", (event) => {
 
 你可以想象一下：如果今天连 `document.querySelector` 都得先 `npm install` 一个库才能用，会是什么感觉？曾经的世界，确实就是那样。很多如今看起来「天生就该存在」的东西，其实最开始都只是某个人 `lib/` 文件夹里的一段代码。
 
-平台吸收库里的模式，并不意味着库「输了」，恰恰相反，这说明它们 **成功到了不再被需要** 的地步。
+平台吸收库里的模式，并不意味着库「输了」，恰恰相反，这说明它们**成功到了不再被需要**的地步。
 
 所以，最后留一个有意思的问题：今天的哪些库，会变成明天的标准？哪些模式正在应用层里悄悄接受实战检验，并会在几年后进入平台？更何况，如今浏览器推进功能的速度比过去快得多 —— 有些特性甚至在发布当年就能进入 `Baseline Newly Available` —— 也许这个时间线会比我们想象得更短。
 

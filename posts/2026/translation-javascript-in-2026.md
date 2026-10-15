@@ -58,7 +58,7 @@ const result = Iterator.from(array)
 
 #### 集合方法（Set Methods）
 
-集合在 JavaScript 里挺不错，它就像数组，但每个元素保证是唯一的。这不算新东西，但如果有 **两个** 集合，现在有了方法能返回一些有趣的信息，比如哪些重叠、哪些不重叠等等。
+集合在 JavaScript 里挺不错，它就像数组，但每个元素保证是唯一的。这不算新东西，但如果有**两个**集合，现在有了方法能返回一些有趣的信息，比如哪些重叠、哪些不重叠等等。
 
 ```javascript
 const youKnow  = new Set(["JS", "Python", "CSS", "SQL"]);
@@ -109,7 +109,7 @@ const goodRe = new RegExp(RegExp.escape(query), "g");
 
 同样，[Claude Code 几乎完美地搞出了一个相当棒的演示](https://codepen.io/editor/chriscoyier/pen/019cbeea-b5e2-7af0-acbe-96dab95e0ee8)。
 
-另外，正则表达式中「修饰符」的用法也有更新。我觉得 `i` 修饰符比较常用，表示不区分大小写。所以你的正则可能以 `/i` 结尾，表示整个表达式都不区分大小写。但如果你只想让正则的 **一部分** 不区分大小写呢？现在可以把那部分用括号包起来，并在开头加上修饰符。
+另外，正则表达式中「修饰符」的用法也有更新。我觉得 `i` 修饰符比较常用，表示不区分大小写。所以你的正则可能以 `/i` 结尾，表示整个表达式都不区分大小写。但如果你只想让正则的**一部分**不区分大小写呢？现在可以把那部分用括号包起来，并在开头加上修饰符。
 
 ```javascript
 // 老办法 —— 不能混用区分大小写
@@ -304,7 +304,7 @@ async function runJob() {
 
 #### `Array.fromAsync` / 迭代器串联（Iterator Sequencing）
 
-`Array.fromAsync` 最初在 2024 年发布，但似乎存在一些规范问题，所以显然它是在 ES2026 才正式进入规范。它会 **等待异步迭代器产生的每一个 `yield` 值**，把它们收集成一个普通数组。没有它，你就得手动循环推入。
+`Array.fromAsync` 最初在 2024 年发布，但似乎存在一些规范问题，所以显然它是在 ES2026 才正式进入规范。它会**等待异步迭代器产生的每一个 `yield` 值**，把它们收集成一个普通数组。没有它，你就得手动循环推入。
 
 ```javascript
 async function* fetchNumbers() {
@@ -365,7 +365,7 @@ console.log(bytes.toHex());
 
 [React 19 在 2024 年 12 月发布](https://react.dev/blog/2024/12/05/react-19)，已经有一段时间了。目前版本是 19.2，据我所知，关于 React 20 的内容公开信息不多。
 
-但 React 19 是一次相当大的更新，带来了他们所称的 [「RSC」（React 服务器组件）](https://react.dev/reference/rsc/server-components)、[React 编译器](https://react.dev/learn/react-compiler)以及 [服务器操作](https://18.react.dev/reference/rsc/server-actions)。简单概括如下：
+但 React 19 是一次相当大的更新，带来了他们所称的 [「RSC」（React 服务器组件）](https://react.dev/reference/rsc/server-components)、[React 编译器](https://react.dev/learn/react-compiler) 以及 [服务器操作](https://18.react.dev/reference/rsc/server-actions)。简单概括如下：
 
 - **RSC**：如果你能部署一个 Node.js 服务器，**或许，只是或许**，有些原本会打包进客户端 JavaScript 包袱里的组件可以省去，这部分工作改在服务器上完成，只传回需要的数据。
 - **服务器操作**：同样在你有可用 Node.js 服务器的前提下，这能让你调用专门在服务器上存在的函数。表单处理是典型例子。
@@ -393,13 +393,13 @@ Svelte 正 [基于 v5 稳步向前](https://svelte.dev/blog/svelte-5-is-alive)�
 
 ### Node.js
 
-可能最近 Node.js 最大的新闻是，它可以 [原生运行 TypeScript 文件](https://nodejs.org/en/learn/typescript/run-natively)了。也就是说：
+可能最近 Node.js 最大的新闻是，它可以 [原生运行 TypeScript 文件](https://nodejs.org/en/learn/typescript/run-natively) 了。也就是说：
 
 ```css
 node my-script.ts
 ```
 
-从 Node.js 22.18.0 版本起这已可用，不再需要 `--experimental-strip-types` 标志。注意它依然是 **剥离** 类型，意味着如果 TypeScript 代码存在真正的问题，它不会帮你发出警告。
+从 Node.js 22.18.0 版本起这已可用，不再需要 `--experimental-strip-types` 标志。注意它依然是**剥离**类型，意味着如果 TypeScript 代码存在真正的问题，它不会帮你发出警告。
 
 Node.js 领域最大的新闻往往是些简单但关键的、基础的、重要的事情，比如安全性、性能的提升，以及向浏览器 JavaScript API 靠拢。
 
@@ -503,13 +503,13 @@ Remix 动荡的余波可能让 [TanStack 宇宙](https://tanstack.com/) 获益�
 
 如果你要构建一个默认静态，但仍使用现代 JavaScript 框架的组件化架构，并且便于按需加入更动态行为的站点，要我说，Astro 就是黄金标准，也是一个相当棒的选择。
 
-[Astro 的最新版本是 6.0](https://astro.build/blog/astro-6/)，带来了许多成熟的功能，比如自定义开发时使用的运行时、内容安全策略，以及一个实验性的更快的编译器。紧随其后[又发了 6.1 版本](https://astro.build/blog/astro-610/) ，带来了诸多细小贴心的配置优化等等，证明了他们有多致力于成为一个好用的框架。
+[Astro 的最新版本是 6.0](https://astro.build/blog/astro-6/)，带来了许多成熟的功能，比如自定义开发时使用的运行时、内容安全策略，以及一个实验性的更快的编译器。紧随其后 [又发了 6.1 版本](https://astro.build/blog/astro-610/) ，带来了诸多细小贴心的配置优化等等，证明了他们有多致力于成为一个好用的框架。
 
 ## npm
 
 [npm](https://www.npmjs.com/) 领域似乎没什么大事发生。距离微软 / GitHub 收购它已经过去六年了，看起来运行良好。倒是 GitHub 自身在 [保证正常运行时间上有点挣扎](https://damrnelson.github.io/github-historical-uptime/)。
 
-而 npm 这边不太妙的是供应链事件，比如 [s1ngularity](https://nx.dev/blog/s1ngularity-postmortem)，它窃取了人们的凭证/令牌/配置文件并公然贴到 GitHub 上 😳。然后是 [debug/chalk](https://www.wiz.io/blog/widespread-npm-supply-chain-attack-breaking-down-impact-scope-across-debug-chalk) 事件，恶意的包更新被推送出去，可以把加密货币交易重定向到某个坏蛋的钱包。再然后是 Shai-Hulud 蠕虫（抱歉，是 **多条** 蠕虫），某种自复制窃取凭证的恶意软件，其 2.0 版本还会覆盖/删除用户主目录下的每一个文件。那个事件波及了 796 个 npm 包，累计下载量超过 2000 万次，所以…… 哇哦。从安全角度看，npm 的这一年不算好。
+而 npm 这边不太妙的是供应链事件，比如 [s1ngularity](https://nx.dev/blog/s1ngularity-postmortem)，它窃取了人们的凭证/令牌/配置文件并公然贴到 GitHub 上 😳。然后是 [debug/chalk](https://www.wiz.io/blog/widespread-npm-supply-chain-attack-breaking-down-impact-scope-across-debug-chalk) 事件，恶意的包更新被推送出去，可以把加密货币交易重定向到某个坏蛋的钱包。再然后是 Shai-Hulud 蠕虫（抱歉，是**多条**蠕虫），某种自复制窃取凭证的恶意软件，其 2.0 版本还会覆盖/删除用户主目录下的每一个文件。那个事件波及了 796 个 npm 包，累计下载量超过 2000 万次，所以…… 哇哦。从安全角度看，npm 的这一年不算好。
 
 如果你有正经的生产应用在使用 npm，或许可以了解一下 [Socket](https://socket.dev/) 这样工具来寻求保护。
 

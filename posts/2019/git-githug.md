@@ -19,7 +19,7 @@ tags:
 
 Githug 是一个基于 Ruby 开发的交互式 Git 学习工具，通过游戏化的方式帮助开发者系统掌握 Git 版本控制系统。区别于 GitHub（代码托管平台），Githug 专注于通过 55 个精心设计的关卡，覆盖从基础操作到高级技巧的完整知识体系。
 
-> 首次接触 Git？ 建议先阅读 [Git 官方文档](https://git-scm.com/doc) 或 [廖雪峰的 Git 教程](https://liaoxuefeng.com/books/git/what-is-git/index.html)了解基础概念。
+> 首次接触 Git？ 建议先阅读 [Git 官方文档](https://git-scm.com/doc) 或 [廖雪峰的 Git 教程](https://liaoxuefeng.com/books/git/what-is-git/index.html) 了解基础概念。
 
 ### 学习建议
 
@@ -38,7 +38,7 @@ Githug 基于 Ruby 运行环境，因此需要预先安装 Ruby。如已安装�
 
 **安装方式**：
 
-- **通用方法**：访问 [Ruby 官网](https://www.ruby-lang.org/zh_cn/downloads/)下载对应平台的安装包
+- **通用方法**：访问 [Ruby 官网](https://www.ruby-lang.org/zh_cn/downloads/) 下载对应平台的安装包
 - **Windows 系统**：推荐使用 [RubyInstaller](https://rubyinstaller.org/downloads/)，提供一键安装体验
 - **macOS 系统**：系统自带 Ruby，也可通过 Homebrew 安装最新版本
 - **Linux 系统**：使用包管理器安装，如 `apt install ruby` 或 `yum install ruby`
@@ -1141,7 +1141,7 @@ Git 是一个博大精深的工具，掌握基础后建议：
 - 使用 `git help <command>` 查看命令帮助
 - 阅读 [Pro Git](https://git-scm.com/book/zh/v2) 这本经典书籍
 - 在 [Stack Overflow](https://stackoverflow.com/questions/tagged/git) 搜索相关问题
-- 参考 [Git 官方文档](https://git-scm.com/doc)获取权威说明
+- 参考 [Git 官方文档](https://git-scm.com/doc) 获取权威说明
 
 坚持练习，你一定能成为 Git 高手！
 

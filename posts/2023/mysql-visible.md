@@ -23,7 +23,7 @@ tags:
 
 ## 问题排查
 
-找了一阵子，在 Stack Overflow 上找到了[这个问答](https://stackoverflow.com/questions/52785125/mysql-workbench-error-in-query-1064-syntax-error-near-visible-at-line-1)，这才恍然大悟。
+找了一阵子，在 Stack Overflow 上找到了 [这个问答](https://stackoverflow.com/questions/52785125/mysql-workbench-error-in-query-1064-syntax-error-near-visible-at-line-1)，这才恍然大悟。
 
 原来问题出在这里：
 
