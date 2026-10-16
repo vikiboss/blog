@@ -99,7 +99,7 @@ export function formatText(text: string): string {
   const { text: textWithoutMd, placeholders } = extractMarkdown(normalized)
 
   // 3. 使用 pangu 格式化中英文混排
-  let formatted = pangu.spacingText(textWithoutMd)
+  let formatted = pangu.spaceText(textWithoutMd)
 
   // 4. 统一名词大小写
   // 使用正则替换，确保只替换完整单词，不影响单词的一部分
