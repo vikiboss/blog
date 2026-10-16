@@ -1,5 +1,10 @@
 [
   {
+    "id": "237",
+    "date": "2026-10-16T09:25:49+08:00",
+    "content": "Node.js 配置文件从 26.12.0 起稳定，默认读 `node.config.json{:.string}`，可通过 `node --config-file node.config.json{:bash}` 覆盖，可以修改 nodeOptions 等多种配置和运行时表现细节。详情参考 [Node.js 官方文档](https://nodejs.org/docs/v26.12.0/api/cli.html#--config-filepath---config-file)。"
+  },
+  {
     "id": "236",
     "date": "2026-10-16T09:10:53+08:00",
     "content": "Telegram Bot 的自托管 Serverless 终于轮到我了。",
