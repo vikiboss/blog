@@ -1,5 +1,13 @@
 [
   {
+    "id": "236",
+    "date": "2026-10-16T09:10:53+08:00",
+    "content": "Telegram Bot 的自托管 Serverless 终于轮到我了。",
+    "images": [
+      "https://image.viki.moe/blog/viki/e5749a.png"
+    ]
+  },
+  {
     "id": "235",
     "date": "2026-10-15T12:09:51+08:00",
     "content": "[在 Hacker News 上](https://news.ycombinator.com/item?id=50023277)，Node.js 之父同时也是 Deno 的作者 Ryan Dahl 指出：「Deno has been sucked into the gravity well of Node compatibility（Deno 已经深陷 Node.js 兼容性泥潭）」，随后反问道：「Why reimplement Node? It works.（既然 Node.js 本身就能用，为什么还要重新实现一遍？）」\n\n> Deno 团队 [加入](https://blog.cloudflare.com/deno-joins-cloudflare/) Cloudflare 后，Deno 将停止开发新功能，并在一年后彻底停止官方维护。"
