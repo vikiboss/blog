@@ -206,12 +206,12 @@ export function BaseMessageForm({
       <form
         ref={formRef}
         action={handleSubmit}
-        className={cn('border-border rounded-lg border', isMessage ? 'p-4' : 'p-3')}
+        className={cn('border-border-secondary rounded-lg border', isMessage ? 'p-4' : 'p-3')}
       >
         {/* 隐藏字段：messageId（仅回复表单） */}
         {!isMessage && messageId && <input type="hidden" name="messageId" value={messageId} />}
 
-        <div className="no-focus border-border mb-2 grid grid-cols-1 gap-1 border-b pb-2 sm:grid-cols-3 sm:gap-2">
+        <div className="no-focus border-border-secondary mb-2 grid grid-cols-1 gap-1 border-b pb-2 sm:grid-cols-3 sm:gap-2">
           {/* 名称 */}
           <div className="flex items-center gap-2">
             <label
@@ -294,7 +294,7 @@ export function BaseMessageForm({
           onChange={handleChange}
           maxLength={maxLength}
           rows={rows}
-          placeholder={isMessage ? '来都来了，键盘敲起。（申请友链请使用友链模版）' : `回复留言...`}
+          placeholder={isMessage ? '来都来了，键盘敲起。（申请友链请使用下方「友链模版」按钮）' : `回复留言...`}
           className="no-focus field-sizing-content min-h-24 w-full"
           required
         />

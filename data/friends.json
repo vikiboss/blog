@@ -129,7 +129,6 @@
     "name": "damesck 的小屋",
     "url": "https://blog.damesck.net/",
     "description": "致不完美的明天_",
-    "status": "offline",
     "avatar": "https://api.damesck.net/avatar.png"
   },
   {
@@ -137,8 +136,8 @@
     "name": "mikann_OMO",
     "url": "https://www.mikann.fun",
     "description": "是一位大艺术家。",
-    "avatar": "https://mikann.fun/avatar.webp",
-    "rss": "https://mikann.fun/rss.xml"
+    "avatar": "https://www.mikann.fun/avatar.webp",
+    "rss": "https://www.mikann.fun/rss.xml"
   },
   {
     "id": "ifdess",

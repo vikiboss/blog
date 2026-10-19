@@ -19,7 +19,7 @@ export async function MessageCard({ message, actions }: MessageCardProps) {
   const html = await parseMessage(message.content)
 
   return (
-    <article className="group border-border bg-bg-primary hover:border-border-secondary rounded-lg border p-4 transition">
+    <article className="group border-border-secondary bg-bg-primary rounded-lg border p-4 transition">
       {/* 头部：作者信息 */}
       <div className="mb-3">
         <MessageAuthor author={message.author} createdAt={message.createdAt} ua={message.ua} />
