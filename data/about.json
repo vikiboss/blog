@@ -53,7 +53,7 @@
           "homepage": "https://mioki.viki.moe/",
           "url": "https://github.com/vikiboss/mioki",
           "description": "基于 NapCat 的 OneBot 框架，KiviBot 精神继任者",
-          "stars": "23",
+          "stars": "20+",
           "status": "active"
         },
         {
@@ -66,7 +66,7 @@
           "name": "@shined/react-use",
           "url": "https://github.com/sheinsight/react-use",
           "description": "SSR 友好的 React Hooks 库",
-          "stars": "67",
+          "stars": "60+",
           "status": "active",
           "homepage": "https://sheinsight.github.io/react-use/"
         },
@@ -74,7 +74,7 @@
           "name": "@shined/reactive",
           "url": "https://github.com/sheinsight/reactive",
           "description": "JavaScript 响应式状态管理库",
-          "stars": "28",
+          "stars": "20+",
           "status": "active",
           "homepage": "https://sheinsight.github.io/reactive/"
         },
@@ -91,14 +91,13 @@
           "name": "单 HTML 文件应用",
           "url": "https://github.com/vikiboss/single-html-app",
           "description": "基于自用单页应用 Skill 开发的单文件应用列表",
-          "stars": "7",
           "status": "active",
           "homepage": "https://html.viki.moe/"
         },
         {
           "name": "R2 Web",
           "url": "https://github.com/vikiboss/r2-web",
-          "stars": "465",
+          "stars": "480+",
           "description": "Cloudflare R2 Web 端，支持浏览、上传和管理",
           "status": "active",
           "homepage": "https://r2.viki.moe/"
@@ -107,7 +106,7 @@
           "name": "Major Winner",
           "url": "https://github.com/vikiboss/major-winner",
           "description": "主播/职业选手的 CS2 Major 竞猜结果 & 排行",
-          "stars": "15",
+          "stars": "10+",
           "status": "active",
           "homepage": "https://major.viki.moe/"
         },
@@ -115,7 +114,7 @@
           "name": "Viki 写东西的地方",
           "url": "https://github.com/vikiboss/blog",
           "description": "本博客，基于 Next.js 与 Tailwind CSS",
-          "stars": "27",
+          "stars": "20+",
           "status": "active"
         },
         {
@@ -128,7 +127,6 @@
           "name": "React Online",
           "url": "https://github.com/vikiboss/react-online",
           "description": "React 在线编辑器，支持 ESM、TS 和 Tailwind CSS",
-          "stars": "9",
           "status": "active",
           "homepage": "https://dev.viki.moe/"
         },
@@ -136,7 +134,6 @@
           "name": "Guitar Studio",
           "url": "https://github.com/vikiboss/guitar-studio",
           "description": "多合一吉他工具：调音、和弦、节奏（WIP）",
-          "stars": "7",
           "status": "active",
           "homepage": "https://guitar.viki.moe/"
         },
@@ -150,7 +147,7 @@
           "name": "原神助手",
           "url": "https://github.com/vikiboss/gs-helper",
           "description": "原神小工具，支持祈愿分析、便签状态和查数据",
-          "stars": "115",
+          "stars": "100+",
           "status": "archived"
         },
         {
@@ -173,7 +170,7 @@
           "url": "https://github.com/vikiboss/60s",
           "description": "每天 60 秒新闻资讯、各种数据 API 聚合服务",
           "status": "active",
-          "stars": "5.7K+",
+          "stars": "5.8k+",
           "homepage": "https://docs.60s-api.viki.moe/"
         },
         {
@@ -181,7 +178,7 @@
           "url": "https://github.com/vikiboss/60s-static-host",
           "description": "每天 60 秒读懂世界定时任务和静态 JSON、图片资源",
           "status": "active",
-          "stars": "90+",
+          "stars": "100+",
           "homepage": "https://60s-static.viki.moe/"
         },
         {
