@@ -1,5 +1,10 @@
 [
   {
+    "id": "241",
+    "date": "2026-10-22T07:57:28+08:00",
+    "content": "昨晚各种严重的 CVE 被披露，一夜之间各种被广泛使用的开发语言、工具等都被暴露在严重的风险之下。昨天还看到了 OpenAI 实验室的模型在尝试主动削弱甚至关闭 AI 预警系统。要我说，在这样下去，人类吃枣药丸 💊。"
+  },
+  {
     "id": "240",
     "date": "2026-10-21T10:36:38+08:00",
     "content": "TypeScript 7.1 Beta [发布](https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/)，值得关注的点：\n\n- 编程 API 稳定，移除 `/unstable/*{:.string}`，发布 `/sync{:.string}`、`/async{:.string}` 等正式 API 入口\n- 引入 [Content Mapper](https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/#content-mappers)，允许 Vue、Astro 等非纯 TS 直接接入 TS 语言服务\n- 官方建议使用 [using](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/using) 关键字来消费 API，避免 Go 侧内存泄漏\n- 环境声明模块支持导入属性，让 TS 根据运行时的导入属性而非文件扩展名来准确提供类型\n- 支持 [Source Phase Imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import/source) 提案语法，即通过 `import source{:ts}` 导入模块但不立即执行\n- 支持 `es2026{:.string}` 及新的标准库方法，如 `Math.sumPrecise(){:ts}`和 `Promise.allKeyed(){:ts}` 等\n\n```ts\n// 编程 API 已稳定，按需要通过不同 API 入口进行导入\nimport { API } from 'typescript/sync'\n\n// 使用 using 关键字来消费 API，避免 Go 侧内存泄漏\nusing api = new API()\n\n// 按导入属性声明实际类型，而不是受限于 \"*.css\" 等文件扩展名\ndeclare module \"*\" with { type: \"css\" } {\n  const content: CSSStyleSheet\n  export default content\n}\n```\n\n```jsonc\n// tsconfig.json 支持配置 Content Mapper\n{\n  \"contentMappers\": [\n    {\n      \"package\": \"@vue/content-mapper\",\n      \"extensions\": [\".vue\"],\n      \"options\": { \"target\": 3.5 }\n    }\n  ]\n}\n```"
