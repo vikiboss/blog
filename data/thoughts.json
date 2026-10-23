@@ -2,12 +2,12 @@
   {
     "id": "242",
     "date": "2026-10-23T08:57:33+08:00",
-    "content": "Anthropic 把 Agent Skill 技术标准 [捐](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation) 给了 [Agent AI 开源基金会](https://agentskills.io)。在这件事上，干得还像人样。"
+    "content": "Anthropic 把 Agent Skill 技术标准 [捐](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation) 给了 [Agent AI](https://agentskills.io) 开源基金会。在这件事上，干得还像人样。"
   },
   {
     "id": "241",
     "date": "2026-10-22T07:57:28+08:00",
-    "content": "昨晚各种严重的 CVE 被披露，一夜之间各种被广泛使用的开发语言、工具等都被暴露在严重的风险之下。昨天还看到了 OpenAI 实验室的模型在尝试主动削弱甚至关闭 AI 预警系统。要我说，在这样下去，人类吃枣药丸 💊。"
+    "content": "昨晚好多严重 CVE 漏洞被披露。一夜之间，各种主流开发语言和工具都被暴露在严重风险之下。昨天还看到 OpenAI 实验室的模型，试图主动削弱甚至关闭 AI 监控警报的 [官方通报](https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring)。\n\n要我说，再这样下去，人类吃枣药丸 💊。"
   },
   {
     "id": "240",

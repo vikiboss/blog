@@ -20,7 +20,7 @@
     "test:coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@next/third-parties": "~16.3.8",
+    "@next/third-parties": "^16.4.2",
     "@octokit/auth-app": "^8.3.1",
     "@octokit/rest": "^22.0.1",
     "@shined/react-use": "^1.14.0",
@@ -35,7 +35,7 @@
     "gray-matter": "^4.0.3",
     "lunar-typescript": "^1.8.6",
     "medium-zoom": "^1.1.0",
-    "next": "~16.3.8",
+    "next": "^16.4.2",
     "next-themes": "^0.4.6",
     "pangu": "^10.4.1",
     "react": "^19.3.1",
@@ -61,7 +61,7 @@
     "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "~16.3.8",
+    "@next/bundle-analyzer": "^16.4.2",
     "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
     "@testing-library/jest-dom": "^7.0.1",
@@ -72,9 +72,9 @@
     "@types/react-dom": "^19.3.0",
     "@types/ua-parser-js": "^0.7.39",
     "babel-plugin-react-compiler": "1.0.0",
-    "baseline-browser-mapping": "^2.11.29",
+    "baseline-browser-mapping": "^2.11.30",
     "eslint": "^10.13.0",
-    "eslint-config-next": "~16.3.8",
+    "eslint-config-next": "^16.4.2",
     "jsdom": "^30.1.3",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
