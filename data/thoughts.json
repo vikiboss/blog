@@ -1,5 +1,10 @@
 [
   {
+    "id": "246",
+    "date": "2026-10-30T16:14:15+08:00",
+    "content": "Node.js 支持直接执行 TS 很久了，本质是剥离了 TS 的文件类型，并把它当作 JS 来执行，但是不支持直接执行 `node_modules` 下的 TS 文件。不支持并不代表技术上做不到，这里更多是出于设计决策和生态长期发展的考量。\n\n最近，官方 [新加](https://github.com/nodejs/node/pull/63869) 了一个 `--experimental-strip-private-modules{:.string}` 特性标志，允许直接执行 `node_modules` 下设置了 `{ \"private\": true }{:json}` 包下的 TS 代码。这个改动，更多是在应对 workspace 场景下的合理需求。"
+  },
+  {
     "id": "245",
     "date": "2026-10-30T16:04:33+08:00",
     "content": "TypeScript 7.1 Beta 新增的 Content Mapper 本来是为了方便 Vue、Astro 等框架处理 TS 的。但现在出现了基于这个功能的更多玩法，比如一个叫 [Reylo](https://reylo.dev/) 的新库，支持直接导入 `.sql{:.string}` 文件并执行 SQL 拿到数据，同时利用 Content Mapper 做到了类型安全。",
