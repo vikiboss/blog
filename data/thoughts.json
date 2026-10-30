@@ -1,5 +1,13 @@
 [
   {
+    "id": "245",
+    "date": "2026-10-30T16:04:33+08:00",
+    "content": "TypeScript 7.1 Beta 新增的 Content Mapper 本来是为了方便 Vue、Astro 等框架处理 TS 的。但现在出现了基于这个功能的更多玩法，比如一个叫 [Reylo](https://reylo.dev/) 的新库，支持直接导入 `.sql{:.string}` 文件并执行 SQL 拿到数据，同时利用 Content Mapper 做到了类型安全。",
+    "images": [
+      "https://image.viki.moe/blog/viki/5b53d2.png"
+    ]
+  },
+  {
     "id": "244",
     "date": "2026-10-28T10:37:50+08:00",
     "content": "TanStack AI 1.0 [发布](https://tanstack.com/blog/tanstack-ai-1-0)，看了 [示例代码](https://tanstack.com/blog/tanstack-ai-1-0#build-your-own-coding-agent) 有被惊艳到。它可以通过定义各种基础组件 + 插件自由组合的方式快速实现一个功能完备且成熟的生产级 Agent，有点牛的。\n\n```ts\nimport { join } from 'node:path'\nimport { homedir } from 'node:os'\nimport { defineHarness } from '@tanstack/ai-harness'\nimport {\n  compact,\n  permissions,\n  todos,\n  usage,\n} from '@tanstack/ai-harness/plugins'\nimport { projectInstructions } from '@tanstack/ai-harness/plugins/node'\nimport { snapshots, workspaceTools } from '@tanstack/ai-harness/plugins/coding'\nimport { runCli } from '@tanstack/ai-harness-cli'\nimport { openaiText } from '@tanstack/ai-openai'\n\nconst root = process.cwd()\n\nconst coder = defineHarness({\n  name: 'acme/coder',\n  adapter: openaiText('gpt-6.1-sol'),\n  systemPrompts: ['You are a careful coding agent. Read before you edit.'],\n  plugins: () => [\n    permissions({ root }),\n    workspaceTools({ root }),\n    snapshots({ root, dataDir: join(homedir(), '.acme-coder', 'snapshots') }),\n    todos(),\n    compact({ adapter: openaiText('gpt-6-luna') }),\n    usage(),\n    projectInstructions({ root }),\n  ],\n})\n\nprocess.exitCode = await runCli(coder)\n```"
