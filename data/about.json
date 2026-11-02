@@ -33,8 +33,7 @@
     "list": [
       { "label": "GitHub", "url": "https://github.com/vikiboss" },
       { "label": "hi@viki.moe", "url": "mailto:hi@viki.moe" },
-      { "label": "RSS", "url": "/rss" },
-      { "label": "碎碎念", "url": "/thoughts/rss" }
+      { "label": "RSS", "url": "/rss" }
     ]
   },
   "openSource": {
