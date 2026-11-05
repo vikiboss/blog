@@ -1,5 +1,10 @@
 [
   {
+    "id": "250",
+    "date": "2026-11-05T17:47:28+08:00",
+    "content": "更好用的 macOS Dock 栏配置，效率优先。特性：自动隐藏 + 立即触发 + 极速动画。\n\n```bash\ndefaults write com.apple.dock autohide -bool true\ndefaults write com.apple.dock autohide-delay -float 0\ndefaults write com.apple.dock autohide-time-modifier -float 0.3\nkillall Dock\n```"
+  },
+  {
     "id": "249",
     "date": "2026-11-05T17:00:49+08:00",
     "content": "Rollup v3 Alpha 测试版本 [发了](https://v3.parceljs.org/blog/v3-alpha/)，又是 Rust 重写..."
