@@ -1,5 +1,10 @@
 [
   {
+    "id": "248",
+    "date": "2026-11-05T16:58:02+08:00",
+    "content": "Next.js 团队开始探索 [将原生语言（Go）融入框架](https://github.com/vercel/next.js/pull/100130)，开发者可以用 Go 在 `route.go{:.string}` 里定义 HTTP 方法处理器。"
+  },
+  {
     "id": "247",
     "date": "2026-11-02T15:17:46+08:00",
     "content": "已严肃使用 DeepSeek 作为默认搜索引擎（\n\n```txt\nhttps://chat.deepseek.com/?q=%s&autosend=1&source=landing&search=1&thinking=1\n```",
