@@ -346,9 +346,9 @@ export function StaticTableOfContentsPC({
 
   return (
     <>
-      {/* PC 端 TOC - 固定在右侧 */}
+      {/* 与 layout 的 max-w-3xl 共用宽度，加上正文的 sm:px-6，间距共 3rem */}
       <nav
-        className="fixed top-1/2 right-4 z-10 hidden max-h-[72vh] w-60 -translate-y-1/2 overflow-y-auto opacity-36 transition-all! hover:opacity-100 xl:block"
+        className="fixed top-1/2 left-[calc(50%+var(--container-3xl)/2+1.5rem)] z-10 hidden max-h-[72vh] w-60 max-w-[calc(50%-var(--container-3xl)/2-2.5rem)] -translate-y-1/2 overflow-y-auto opacity-36 transition-all! hover:opacity-100 xl:block"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         aria-label="文章目录"
