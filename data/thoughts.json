@@ -1,5 +1,13 @@
 [
   {
+    "id": "251",
+    "date": "2026-11-08T20:14:49+08:00",
+    "content": "今晚的战斗力。",
+    "images": [
+      "https://image.viki.moe/blog/viki/ef67fd.jpeg"
+    ]
+  },
+  {
     "id": "250",
     "date": "2026-11-05T17:47:28+08:00",
     "content": "更好用的 macOS Dock 栏配置，效率优先。特性：自动隐藏 + 立即触发 + 极速动画。\n\n```bash\ndefaults write com.apple.dock autohide -bool true\ndefaults write com.apple.dock autohide-delay -float 0\ndefaults write com.apple.dock autohide-time-modifier -float 0.3\nkillall Dock\n```"
