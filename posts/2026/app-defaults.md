@@ -14,7 +14,7 @@ tags:
 
 - 📨 邮件客户端: [Apple 邮件](https://www.icloud.com/mail) (macOS & iOS) + [QQ 邮箱](https://mail.qq.com/) (Web)
 - 📮 邮件服务器: [腾讯企业邮箱](https://exmail.qq.com/) (域名邮箱) + [QQ 邮箱](https://mail.qq.com/)
-- 📝 笔记: [Apple 备忘录](https://www.icloud.com/notes) + [Simplenote](https://simplenote.com/)
+- 📝 笔记: [Obsidian](https://obsidian.md/) (工作笔记) + [Apple 备忘录](https://www.icloud.com/notes) + [Simplenote](https://simplenote.com/)
 - ✅ 待办事项: [Apple 提醒事项](https://www.icloud.com/reminders)
 - 📷 手机拍照: [无他相机](https://www.wuta-cam.com/) (iOS & 滤镜) + [Apple 相机](https://apps.apple.com/cn/app/%E7%9B%B8%E6%9C%BA/id1584216193)
 - 🟦 照片管理: [Apple 照片](https://www.icloud.com/photos)
@@ -23,6 +23,7 @@ tags:
 - 📖 RSS 阅读: [QiReader](https://www.qireader.com/) (轻量 PWA & 多端同步 & 体验好)
 - 🙍🏻‍♂️ 联系人: [Apple 联系人](https://www.icloud.com/contacts)
 - 🌐 浏览器: [Brave](https://brave.com/) on Desktop (广告过滤 & 隐私保护) + [Alook](https://alookweb.com/) on Mobile (极速强大)
+- 🛒 购物清单: [Apple 提醒事项](https://www.icloud.com/reminders) 的 [共享清单](https://support.apple.com/zh-cn/guide/iphone/iph2a8f9121e/ios)
 - 💰 预算与个人财务: [QQ 机器人](https://q.qq.com/)
 - 💬 即时通讯: [腾讯 QQ](https://im.qq.com/)，[微信](https://weixin.qq.com/)
 - 🔖 书签: 浏览器内置
@@ -52,10 +53,15 @@ tags:
 
 **更新记录**
 
+2026-11-10
+
+- 📝 笔记: 回到 [Obsidian](https://obsidian.md/)，记录工作笔记 (本地数据隐私安全)，开始习惯双链笔记
+- 🛒 购物清单: [Apple 提醒事项](https://www.icloud.com/reminders) 的 [共享清单](https://support.apple.com/zh-cn/guide/iphone/iph2a8f9121e/ios)
+
 2026-11-02，文章发布。历史工具变更补充：
 
 - 📨 邮件客户端: [QQ 邮箱](https://mail.qq.com/) (UI 与系统风格割裂) → [Apple 邮件](https://www.icloud.com/mail)
-- 📝 笔记: [有道云笔记](https://note.youdao.com/) (隐私担忧) → [Notion](https://www.notion.com/) (基于 Web 不跟手) → [Obsidian](https://obsidian.md/) (不习惯双链笔记) → [iNote](https://apps.apple.com/cn/app/inote-%E7%81%B5%E6%84%9F%E7%AC%94%E8%AE%B0-ideas-note/id1479356575) (轻度使用 & 会员成本高) → [Apple 备忘录](https://www.icloud.com/notes)
+- 📝 笔记: [有道云笔记](https://note.youdao.com/) (隐私担忧) → [Notion](https://www.notion.com/) (基于 Web 不跟手) → [Obsidian](https://obsidian.md/) (不习惯双链笔记) → [iNote](https://apps.apple.com/cn/app/inote-%E7%81%B5%E6%84%9F%E7%AC%94%E8%AE%B0-ideas-note/id1479356575) (轻度使用 & 会员成本高) → [Apple 备忘录](https://www.icloud.com/notes) + [Simplenote](https://simplenote.com/)
 - ✅ 待办事项: [iBetter](https://app.ipad.ly/ibetter) (操作流程阻力大) → [Apple 提醒事项](https://www.icloud.com/reminders)
 - 📖 RSS 阅读: [Feedly](https://feedly.com/) (额度受限) → [NetNewsWire](https://netnewswire.com/) (无 Windows 版本) → [QiReader](https://www.qireader.com/)
 - 🌐 浏览器: [Chrome](https://www.google.com/chrome/) (「广告/隐私/内存/扩展兼容性/商业化」等问题) → [Brave](https://brave.com/) 
