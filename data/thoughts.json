@@ -1,5 +1,10 @@
 [
   {
+    "id": "255",
+    "date": "2026-11-13T11:17:27+08:00",
+    "content": "长期构建于 Express/Fastify 之上的 NestJS 最近在 12.3.0 版本正式引入了第三个适配器 [NodeAdapter](https://docs.nestjs.com/http/performance#node-adapter)，包名 `@nestjs/platform-node{:.string}`。NodeAdapter 基于 Node.js 内置的 `node:http{:.string}` 模块开发，Express 风格，但不依赖 Express。"
+  },
+  {
     "id": "254",
     "date": "2026-11-13T11:02:36+08:00",
     "content": "SVG 即将迎来史诗级更新。具体来说，SVG [链接参数](https://drafts.csswg.org/css-link-params-1/#css-link-parameter)（Linked Parameters）这一特性即将在所有主流浏览器中落地，允许你从外部通过 CSS 控制被引用 SVG 的样式。使用 `param(){:.function}` 在外部定义，使用 `env(){:.function}` 在 SVG 内部引用。\n\n比如，给定以下 SVG 内容：\n\n```html\n<!-- icon.svg -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" \n     width=\"env(--size, 48px)\" height=\"env(--size, 48px)\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"env(--color, dimgray)\" />\n</svg>\n```\n\n你可以在 CSS 里用参数或者属性声明，HTML 类似。\n\n```css\n.icon {\n  /* 方式一，URL 参数 */\n  background-image: url(\"icon.svg#param(--color, red)&param(--size, 24px)\");\n  /* 方式二，CSS 属性声明 */\n  link-parameters: param(--color, red), param(--size, 24px);\n}\n```\n\n```html\n<!-- HTML 也可以直接传参 -->\n<img src=\"icon.svg#param(--color, red)&param(--size, 24px)\">\n```"
