@@ -1,6 +1,7 @@
 'use server'
 
 import { dayjs } from '@/lib/dayjs'
+import { toText } from 'markdown-plaintext'
 import { getAllPosts } from '@/lib/posts'
 import { about, thoughts, mioSays, timeline, friends, collection } from '@/lib/data'
 
@@ -26,32 +27,6 @@ const TYPE_WEIGHTS: Record<SearchIndexItem['type'], number> = {
   friend: 1,
 }
 
-function cleanMarkdown(markdown: string): string {
-  let c = markdown
-  c = c.replace(/^---[\s\S]*?---\n/m, '')
-  c = c.replace(/^\s*\|?(\s*[:-]+[-| :]*\|)+\s*$/gm, '')
-  c = c.replace(/```[\s\S]*?```/g, '')
-  c = c.replace(/~~~[\s\S]*?~~~/g, '')
-  c = c.replace(/`[^`]+`/g, '')
-  c = c.replace(/!\[([^\]]*)\]\([^\)]+\)/g, '$1')
-  c = c.replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
-  c = c.replace(/<[^>]+>/g, '')
-  c = c.replace(/\*\*([^*]+)\*\*/g, '$1')
-  c = c.replace(/__([^_]+)__/g, '$1')
-  c = c.replace(/\*([^*]+)\*/g, '$1')
-  c = c.replace(/_([^_]+)_/g, '$1')
-  c = c.replace(/~~([^~]+)~~/g, '$1')
-  c = c.replace(/\|\|([^|]+)\|\|/g, '$1')
-  c = c.replace(/^[\s]*-\s*\[[x\s]\]\s+/gim, '')
-  c = c.replace(/^#{1,6}\s+/gm, '')
-  c = c.replace(/^[\s]*[-*+]\s+/gm, '')
-  c = c.replace(/^[\s]*\d+\.\s+/gm, '')
-  c = c.replace(/^>\s+/gm, '')
-  c = c.replace(/^[\s]*[-*_]{3,}[\s]*$/gm, '')
-  c = c.replace(/\n{3,}/g, '\n\n')
-  return c.trim()
-}
-
 function truncate(text: string, max = 100): string {
   return text.length <= max ? text : text.slice(0, max).trim() + '...'
 }
@@ -72,7 +47,7 @@ async function getAllSearchItems(): Promise<SearchIndexItem[]> {
       type: post.isOriginal ? 'post' : 'tech',
       title: post.title,
       excerpt: post.excerpt,
-      content: cleanMarkdown(post.content),
+      content: toText(post.content),
       tags: post.tags,
       date: post.date,
       url: `/${post.slug}`,
@@ -81,7 +56,7 @@ async function getAllSearchItems(): Promise<SearchIndexItem[]> {
 
   // 碎碎念
   for (const thought of thoughts) {
-    const content = cleanMarkdown(thought.content)
+    const content = toText(thought.content)
     items.push({
       id: `thought-${thought.id}`,
       type: 'thought',
@@ -95,7 +70,7 @@ async function getAllSearchItems(): Promise<SearchIndexItem[]> {
 
   // Mio 说
   for (const mioSay of mioSays) {
-    const content = cleanMarkdown(mioSay.content)
+    const content = toText(mioSay.content)
     items.push({
       id: `mio-say-${mioSay.id}`,
       type: 'mio-say',
@@ -137,7 +112,7 @@ async function getAllSearchItems(): Promise<SearchIndexItem[]> {
     )
     for (const event of yearItems) {
       const id = timeline.length - globalIdx
-      const content = cleanMarkdown(event.description)
+      const content = toText(event.description)
       items.push({
         id: `timeline-${id}`,
         type: 'timeline',

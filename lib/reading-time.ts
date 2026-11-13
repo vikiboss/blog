@@ -8,36 +8,36 @@ export interface StripMarkdownOptions {
 export function stripMarkdown(markdown: string, options: StripMarkdownOptions = {}): string {
   const { hideCodeBlockContent = false, normalizeWhitespace = false } = options
   let result = markdown
-      // 移除 frontmatter（^ 不加 m 标志，只匹配字符串开头）
-      .replace(/^---[\s\S]*?---/, '')
-      // fenced 代码块（``` 和 ~~~，反向引用匹配同数量分隔符）
-      .replace(/(`{3,}|~{3,})[^\n]*\n([\s\S]*?)\1/g, hideCodeBlockContent ? '[代码块]' : '$2')
-      // 行内代码：移除标记，保留内容
-      .replace(/`([^`]+)`/g, '$1')
-      // 图片 → [图片]（必须在链接之前处理）
-      .replace(/!\[([^\]]*)\]\([^)]+\)/g, '[图片]')
-      // 链接：移除标记，保留文本
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-      // 标题标记
-      .replace(/#{1,6}\s+/g, '')
-      // 加粗、斜体、删除线
-      .replace(/[*_~]{1,2}([^*_~]+)[*_~]{1,2}/g, '$1')
-      // 剧透标记 ||text||
-      .replace(/\|\|([^|]+)\|\|/g, '$1')
-      // 任务列表（必须在无序列表之前）
-      .replace(/^[\s]*-\s*\[[x\s]\]\s+/gim, '')
-      // 引用标记
-      .replace(/^>\s*/gm, '')
-      // 无序列表标记
-      .replace(/^[-*+]\s+/gm, '')
-      // 有序列表标记
-      .replace(/^\d+\.\s+/gm, '')
-      // 表格分隔行
-      .replace(/^\s*\|?(\s*[:-]+[-| :]*\|)+\s*$/gm, '')
-      // 水平分割线
-      .replace(/^[-*_]{3,}$/gm, '')
-      // HTML 标签
-      .replace(/<[^>]+>/g, '')
+    // 移除 frontmatter（^ 不加 m 标志，只匹配字符串开头）
+    .replace(/^---[\s\S]*?---/, '')
+    // fenced 代码块（``` 和 ~~~，反向引用匹配同数量分隔符）
+    .replace(/(`{3,}|~{3,})[^\n]*\n([\s\S]*?)\1/g, hideCodeBlockContent ? '[代码块]' : '$2')
+    // 行内代码：移除标记，保留内容
+    .replace(/`([^`]+)`/g, '$1')
+    // 图片 → [图片]（必须在链接之前处理）
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '[图片]')
+    // 链接：移除标记，保留文本
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    // 标题标记
+    .replace(/#{1,6}\s+/g, '')
+    // 加粗、斜体、删除线
+    .replace(/[*_~]{1,2}([^*_~]+)[*_~]{1,2}/g, '$1')
+    // 剧透标记 ||text||
+    .replace(/\|\|([^|]+)\|\|/g, '$1')
+    // 任务列表（必须在无序列表之前）
+    .replace(/^[\s]*-\s*\[[x\s]\]\s+/gim, '')
+    // 引用标记
+    .replace(/^>\s*/gm, '')
+    // 无序列表标记
+    .replace(/^[-*+]\s+/gm, '')
+    // 有序列表标记
+    .replace(/^\d+\.\s+/gm, '')
+    // 表格分隔行
+    .replace(/^\s*\|?(\s*[:-]+[-| :]*\|)+\s*$/gm, '')
+    // 水平分割线
+    .replace(/^[-*_]{3,}$/gm, '')
+    // HTML 标签
+    .replace(/<[^>]+>/g, '')
   if (normalizeWhitespace) {
     result = result.replace(/\n{3,}/g, '\n\n').trim()
   }

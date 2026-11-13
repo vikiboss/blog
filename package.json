@@ -34,6 +34,7 @@
     "feed": "^6.0.0",
     "gray-matter": "^4.0.3",
     "lunar-typescript": "^1.8.7",
+    "markdown-plaintext": "^0.1.0",
     "medium-zoom": "^1.1.2",
     "next": "^16.4.6",
     "next-themes": "^0.4.6",
