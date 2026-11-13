@@ -1,5 +1,10 @@
 [
   {
+    "id": "253",
+    "date": "2026-11-13T09:14:42+08:00",
+    "content": "[Yuku](https://yuku.fyi/) 被 Prettier 官方采纳，并为其创建了官方插件 `@prettier/plugin-yuku`。之前看到 Yuku 还以为只是一个拿 Zig 练手的实验性学习项目，现在看来还是有几把刷子的。"
+  },
+  {
     "id": "252",
     "date": "2026-11-13T08:59:55+08:00",
     "content": "Node.js 似乎在 [考虑引入](https://github.com/nodejs/node/pull/67157) `node:yaml{:.string}`，为其提供内置的 yaml 格式支持。\n\n```ts\nimport yaml from 'node:yaml'\n\nyaml.parse('name: app\\nports: [8080, 8443]\\n')\n// { name: 'app', ports: [ 8080, 8443 ] }\n```"
