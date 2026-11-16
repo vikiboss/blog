@@ -84,7 +84,7 @@ export default async function PostsPage() {
         <section className="space-y-3">
           <h1 className="text-3xl font-bold sm:text-4xl">{pages.tech.title}</h1>
           <p className="text-text-secondary">
-            {`${pages.tech.description}，共 ${allPosts.length.toLocaleString('zh-Hans-CN')} 篇，累计 ${totalWords.toLocaleString('zh-Hans-CN')} 字，按年份分组展示。`}
+            {`${pages.tech.description}共 ${allPosts.length.toLocaleString('zh-Hans-CN')} 篇，累计 ${totalWords.toLocaleString('zh-Hans-CN')} 字，按年份分组展示。`}
           </p>
         </section>
 

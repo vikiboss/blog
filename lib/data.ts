@@ -57,8 +57,8 @@ export const pages = {
     slug: '/thoughts',
   },
   tech: {
-    title: '译集',
-    description: `冲浪时阅读到的技术好文，翻译并整理在此。主要内容由 AI 辅助翻译，我进行了后期润色和校对`,
+    title: '译文集',
+    description: `冲浪时读到的技术好文，翻译或转载并整理在此。译文主要由 AI 辅助，我进行了后期润色和校对。`,
     slug: '/tech',
   },
   mioSays: {

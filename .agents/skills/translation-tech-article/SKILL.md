@@ -1,6 +1,6 @@
 ---
 name: translation-tech-article
-description: Translates technical and frontend articles (from URL, pasted text, or file) into publication-ready Chinese Markdown saved under ./posts/{year}/. Use when the user asks for a Chinese translation of a technical article, or provides an article and requests a formatted, saved translation with proper frontmatter, Pandoc-style typography, and consistent terminology. Not for casual or non-technical translation, nor for summarizing.
+description: 将技术文章译成中文并存入博客，保存到 posts/{year}/。适用于用户要求把一篇技术文章翻成中文、或给出外文链接希望发布中文版的场景，译文需符合中文技术社区行文习惯（盘古之白、「」引号、术语统一）。不适用于不做翻译、原样照发的转载，也不适用于摘要或读后感。
 license: MIT
 ---
 
@@ -8,12 +8,28 @@ license: MIT
 
 将技术文章完整翻译为符合中文语法习惯和中文技术社区惯例、可直接发布的 Markdown，保存到 `./posts/{year}/`。优先准确、完整、专业，不摘要、不删减论点、不添加原文没有的事实。
 
+译文与转载稿共用「译文集」（`/tech`）页面：该页按 `isOriginal: false` 筛选，靠标题前缀 `[译]` / `[转]` 区分类型。因此 `isOriginal` 必须为 `false`。
+
+**何时使用**：用户要的是「中文版本」。常见的说法是「翻译一下这篇」「帮我译成中文」「这个链接翻成中文发到博客」。产物是重写过的中文正文。
+
+**何时不用**：用户说「转一下」「搬运」「存个档」「原样放上去」，或者明确要保留原文语言。那时用 `repost-tech-article`。
+
+拿不准就看用户是想要「中文版」还是「原样留存」：前者翻译，后者转载。两者都不做摘要，要摘要直接摘要。
+
 ## 流程
+
+### 0. 确认输入
+
+- **无输入**：提示用户提供 URL、粘贴原文或文件路径，不猜测、不搜索、不编造。
+- **只给了 URL**：抓取前先问一句「有已解析好的 Markdown 吗？有就贴过来或给路径」。有则等用户提供，无则直接抓取。
+- 用户提供的解析文本残缺时，说明残缺范围再问是否照译。
 
 ### 1. 提取原文信息
 
 从 URL / 粘贴内容 / 文件中获取：标题、作者、发表时间、原文链接。
 
+- 优先用用户提供的解析文本；无时才抓取网页
+- 抓取时先读 JSON-LD、`og:*` 拿元信息；抓不到正文（SPA、反爬、登录墙）就要求用户粘贴原文
 - 无法确认的字段标为 `未注明`，链接无法确认时标为 `未提供`，**不得猜测**
 - 原文不完整时明确说明翻译范围，**不得谎称全文翻译**
 - 无网络访问时要求用户粘贴原文
@@ -60,8 +76,8 @@ license: MIT
 | `date` | 本次译文生成日期 `YYYY-MM-DD`，须与目录年份一致 |
 | `excerpt` | ≤40 字，概括核心内容，不写成宣传语 |
 | `topic` | 仅 `技术` 或 `前端`；核心主题属前端时选 `前端` |
-| `isOriginal` | 不加引号的布尔值 `false` |
-| `author` | 原作者全名，未知填 `未注明` |
+| `isOriginal` | 不加引号的布尔值 `false`（决定是否进 `/tech` 译文集，必填） |
+| `author` | 原作者全名，未知填 `未注明`；最多列两人，第三位起用 `等`，如 `A、B 等` |
 | `tags` | 3–6 个，必须含 `翻译` |
 
 ## 输出模板
@@ -103,7 +119,10 @@ tags:
 
 | 场景 | 处理 |
 |---|---|
-| URL 无法访问 | 重试；仍失败则要求用户粘贴原文 |
+| 未提供输入 | 提示提供 URL、原文或文件路径 |
+| 给了 URL | 先问是否有已解析的 Markdown |
+| URL 无法访问 | 重试；仍失败则要求粘贴原文 |
+| 抓取只得空壳 HTML | 要求粘贴原文，不编造正文 |
 | 目标文件已存在 | 换一个合规 slug，不覆盖 |
 | 元信息无法确认 | 标 `未注明` / `未提供`，不猜测 |
 | 原文非英/中 | 照常译成中文，在译者注说明原文语言 |
@@ -112,8 +131,9 @@ tags:
 
 ## 完成检查
 
+- [ ] 输入已确认（URL 场景问过是否有解析文本）
 - [ ] 路径、slug、目录年份合规，未覆盖已有文件
-- [ ] Frontmatter 字段完整合法，`date` 与目录年份一致
+- [ ] Frontmatter 字段完整合法，`isOriginal: false`，`date` 与目录年份一致
 - [ ] 正文完整准确，术语一致，图片/alt 处理正确，代码与链接完好
 - [ ] 广告清理干净，相关论据/资源/披露保留，代码块语言标识正确
 - [ ] 盘古之白、中文引号合规；链接与相邻中文之间留空格

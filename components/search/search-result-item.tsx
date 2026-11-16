@@ -16,7 +16,7 @@ interface SearchResultItemProps {
 
 // 类型名称映射
 const TYPE_NAMES: Record<SearchIndexItem['type'], string> = {
-  tech: '译集',
+  tech: '译文集',
   post: '文章',
   thought: '碎碎念',
   'mio-say': 'Mio 说',
