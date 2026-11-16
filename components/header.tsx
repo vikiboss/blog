@@ -84,7 +84,7 @@ export function Header() {
           <Link
             href={pages.posts.slug}
             className={cn(
-              'active:bg-bg-secondary sm:hover:bg-bg-tertiary rounded px-1.5 py-0.5 font-medium',
+              'active:bg-bg-secondary sm:hover:bg-bg-tertiary rounded px-1 py-0.5 font-medium sm:px-1.5',
             )}
           >
             {pages.posts.title}
@@ -93,7 +93,7 @@ export function Header() {
           <Link
             href={pages.tech.slug}
             className={cn(
-              'active:bg-bg-secondary sm:hover:bg-bg-tertiary rounded px-1.5 py-0.5 font-medium',
+              'active:bg-bg-secondary sm:hover:bg-bg-tertiary rounded px-1 py-0.5 font-medium sm:px-1.5',
             )}
           >
             {pages.tech.title}
@@ -102,7 +102,7 @@ export function Header() {
           <Link
             href={pages.thoughts.slug}
             className={cn(
-              'active:bg-bg-secondary sm:hover:bg-bg-tertiary rounded px-1.5 py-0.5 font-medium',
+              'active:bg-bg-secondary sm:hover:bg-bg-tertiary rounded px-1 py-0.5 font-medium sm:px-1.5',
             )}
           >
             {pages.thoughts.title}
@@ -154,7 +154,7 @@ export function Header() {
                 <Link
                   key={pages.mioSays.slug}
                   href={pages.mioSays.slug}
-                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                  className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.mioSays.title}
@@ -165,7 +165,7 @@ export function Header() {
                     <Link
                       key={page.slug}
                       href={page.slug}
-                      className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                      className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                       onClick={() => {
                         setIsMoreOpen(false)
                       }}
@@ -177,7 +177,7 @@ export function Header() {
                 <Link
                   key={pages.about.slug}
                   href={pages.about.slug}
-                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                  className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.about.title}
@@ -187,7 +187,7 @@ export function Header() {
 
                 <Link
                   href={pages.friends.slug}
-                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                  className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.friends.title}
@@ -195,7 +195,7 @@ export function Header() {
 
                 <a
                   href={pages.messages.slug}
-                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                  className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.messages.title}
@@ -203,7 +203,7 @@ export function Header() {
 
                 <a
                   href={pages.reading.slug}
-                  className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                  className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                   onClick={() => setIsMoreOpen(false)}
                 >
                   {pages.reading.title}
@@ -214,7 +214,7 @@ export function Header() {
                   <a
                     href={siteConfig.author.github}
                     target="_blank"
-                    className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                    className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                     onClick={() => setIsMoreOpen(false)}
                   >
                     GitHub
@@ -223,7 +223,7 @@ export function Header() {
                   <a
                     href={siteConfig.links.rss}
                     target="_blank"
-                    className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                    className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                     onClick={() => setIsMoreOpen(false)}
                   >
                     RSS
@@ -232,7 +232,7 @@ export function Header() {
                   <a
                     href={siteConfig.links.travellings}
                     target="_blank"
-                    className={cn('hover:bg-bg-tertiary block px-2 py-1 m-1 rounded')}
+                    className={cn('hover:bg-bg-tertiary m-1 block rounded px-2 py-1')}
                     onClick={() => setIsMoreOpen(false)}
                   >
                     开往 · 友链接力
