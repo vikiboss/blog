@@ -37,7 +37,7 @@ tags:
 
 1976 年，Xerox Alto 上的 Smalltalk-76 系统提出了第一个真正可用的弹出式上下文菜单（以及许多其他东西）。
 
-![在 Xerox Alto 上运行的 Smalltalk-76](https://sorenblank.com/_next/static/immutable/media/xeroxalto.3yfk76-oo9qzr.jpg)
+![在 Xerox Alto 上运行的 Smalltalk-76](https://image.viki.moe/blog/context-menu/0cffd4.png)
 
 让这一切成为可能的人是 Dan Ingalls。他发明了 `BitBlt`，一个可以把一块像素极快地从一个位置复制到另一个位置的操作。正是它让菜单能弹在屏幕上任何内容之上，再收起来，而不必重绘一切。这在今天听起来很无聊。可当年没人见过这种东西。当 Dan 在 PARC 演示它时，L Peter Deutsch 从椅子上跳了起来，说：**「你刚才是不是做了我以为你做的那个事？」**
 
