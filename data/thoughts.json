@@ -1,5 +1,10 @@
 [
   {
+    "id": "256",
+    "date": "2026-11-19T18:24:13+08:00",
+    "content": "[UU 远程](https://uuyc.163.com/) 的 4K 高帧也要 [开始收费](https://uuyc.163.com/blog/20261118-dwdsa.html) 了吗，哎..."
+  },
+  {
     "id": "255",
     "date": "2026-11-13T11:17:27+08:00",
     "content": "长期构建于 Express/Fastify 之上的 NestJS 最近在 12.3.0 版本正式引入了第三个适配器 [NodeAdapter](https://docs.nestjs.com/http/performance#node-adapter)，包名 `@nestjs/platform-node{:.string}`。NodeAdapter 基于 Node.js 内置的 `node:http{:.string}` 模块开发，Express 风格，但不依赖 Express。"
