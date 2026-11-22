@@ -5,6 +5,14 @@ import { dayjs, TZ_SHANGHAI } from './dayjs'
 
 export type InteractionType = string // 完全开放，不限制类型
 
+/**
+ * 互动系统总开关
+ * 临时关闭以降低 Vercel CPU 消耗：关闭后不再读写 KV 计数、
+ * 服务端不再渲染互动按钮，点击提交入口也会直接返回失败。
+ * 需要恢复时改回 true 即可。
+ */
+export const INTERACTIONS_ENABLED = false
+
 export interface InteractionConfig {
   /** 图标组件名称 */
   icon: 'cheers' | 'flower' | 'heart' | string
@@ -37,7 +45,7 @@ export const INTERACTION_CONFIGS: Record<string, InteractionConfig> = {
     colorVar: '--color-viki-blue',
     ariaLabel: '干杯',
     displayName: '碎碎念互动',
-    enabled: true,
+    enabled: INTERACTIONS_ENABLED,
     maxClicksPerDay: 1, // 每天 1 次
   },
   'mio-says': {
@@ -45,7 +53,7 @@ export const INTERACTION_CONFIGS: Record<string, InteractionConfig> = {
     colorVar: '--color-mio-pink',
     ariaLabel: '献花',
     displayName: 'Mio 说互动',
-    enabled: true,
+    enabled: INTERACTIONS_ENABLED,
     maxClicksPerDay: 1, // 每天 1 次
   },
   posts: {
@@ -53,13 +61,17 @@ export const INTERACTION_CONFIGS: Record<string, InteractionConfig> = {
     colorVar: '--color-mio-pink',
     ariaLabel: '喜欢',
     displayName: '文章互动',
-    enabled: true, // 已启用
+    enabled: INTERACTIONS_ENABLED,
     maxClicksPerDay: 1, // 每天 1 次
   },
 }
 
 // 获取配置（带验证）
 export function getInteractionConfig(type: string): InteractionConfig | null {
+  if (!INTERACTIONS_ENABLED) {
+    return null
+  }
+
   const config = INTERACTION_CONFIGS[type]
   if (!config || config.enabled === false) {
     return null
@@ -160,7 +172,8 @@ export async function getInteractionCounts(
   type: string,
   ids: string[],
 ): Promise<Record<string, number>> {
-  if (ids.length === 0) {
+  // 总开关关闭时不访问 KV，直接返回空计数（调用方会因此不渲染按钮）
+  if (!INTERACTIONS_ENABLED || !getInteractionConfig(type) || ids.length === 0) {
     return {}
   }
 

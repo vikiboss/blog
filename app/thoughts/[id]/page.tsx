@@ -168,16 +168,18 @@ export default async function ThoughtPage({ params }: { params: Promise<{ id: st
           </article>
         </section>
 
-        <section className="flex items-center justify-center">
-          <InteractionButton
-            id={thought.id}
-            type="thoughts"
-            initialCount={counts[thought.id]}
-            revalidatePagePath={['/thoughts', `/thoughts/${id}`]}
-            className="text-lg sm:text-xl"
-            iconClassName="text-2xl sm:text-3xl"
-          />
-        </section>
+        {typeof counts[thought.id] === 'number' && (
+          <section className="flex items-center justify-center">
+            <InteractionButton
+              id={thought.id}
+              type="thoughts"
+              initialCount={counts[thought.id]}
+              revalidatePagePath={['/thoughts', `/thoughts/${id}`]}
+              className="text-lg sm:text-xl"
+              iconClassName="text-2xl sm:text-3xl"
+            />
+          </section>
+        )}
       </div>
     </>
   )

@@ -181,10 +181,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </p>
         </div>
 
-        {/* Post Like */}
-        <div className="mt-8">
-          <PostLike slug={slug} initialCount={counts[slug]} />
-        </div>
+        {/* Post Like（互动功能关闭时不渲染） */}
+        {typeof counts[slug] === 'number' && (
+          <div className="mt-8">
+            <PostLike slug={slug} initialCount={counts[slug]} />
+          </div>
+        )}
 
         <div className="border-border mt-8 flex justify-center border-t pt-8">
           <div className="flex flex-1 truncate px-2 sm:justify-center">

@@ -59,13 +59,17 @@ function ThoughtCardClient({
         </a>
         <span className="text-text-secondary">·</span>
         <RelativeTime date={thought.date} className="text-text-secondary" />
-        <span className="text-text-secondary">·</span>
-        <InteractionButton
-          id={thought.id}
-          type={mioTheme ? 'mio-says' : 'thoughts'}
-          initialCount={thought.initialCount}
-          revalidatePagePath={slug}
-        />
+        {typeof thought.initialCount === 'number' && (
+          <>
+            <span className="text-text-secondary">·</span>
+            <InteractionButton
+              id={thought.id}
+              type={mioTheme ? 'mio-says' : 'thoughts'}
+              initialCount={thought.initialCount}
+              revalidatePagePath={slug}
+            />
+          </>
+        )}
       </div>
 
       {thought.html && (
