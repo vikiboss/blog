@@ -2,7 +2,7 @@
   {
     "id": "257",
     "date": "2026-11-23T08:29:26+08:00",
-    "content": "Node.js 捆绑了 [simdjson](https://github.com/simdjson/simdjson)，一个由 C++ 编写的流行高效率 JSON 解析器。同时 `simdjson{:.string}` 的联合开发者提出了 `node:json` 模块，区别于 `JSON.parse(){:ts}` 和 `JSON.stringify(){:ts}`，它可以实现更快、更懒惰的 JSON 解析。"
+    "content": "Node.js 捆绑了 [simdjson](https://github.com/simdjson/simdjson)，一个由 C++ 编写的流行高效率 JSON 解析器。同时 `simdjson{:.string}` 的联合开发者提出了 `node:json{:.string}` 模块，区别于 `JSON.parse(){:ts}` 和 `JSON.stringify(){:ts}`，它可以实现更快、更懒惰的 JSON 解析。"
   },
   {
     "id": "256",
