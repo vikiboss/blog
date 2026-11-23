@@ -2,7 +2,7 @@
   {
     "id": "261",
     "date": "2026-11-23T09:48:07+08:00",
-    "content": "vlt 的 registry 从 11 月 18 日开始 [免费公开](https://www.vlt.io/blog/free-public-npm-mirror)，不再需要登录和配置 Key，切换注册表地址即可开始使用。因其在返回的 JSON 里大幅削减了不必要的信息，npm 包的安装速度可以提高 2-3 倍。\n\n```ini\n# .npmrc\nregistry=https://registry.vlt.io/upstream/npm/\n```"
+    "content": "[vlt](https://www.vlt.io/) 的 npm 注册表从 18 号开始 [免费公开](https://www.vlt.io/blog/free-public-npm-mirror)，不再需要登录和配置 Key，切换地址即可开始使用。因其在返回的 JSON 里大幅削减了不必要信息，npm 包的安装速度提高了 2-3 倍。\n\n```ini\n# .npmrc\nregistry=https://registry.vlt.io/upstream/npm/\n```"
   },
   {
     "id": "260",
