@@ -1,5 +1,10 @@
 [
   {
+    "id": "259",
+    "date": "2026-11-23T09:37:09+08:00",
+    "content": "从 5.109 版本起，webpack [内置](https://webpack.js.org/blog/2026-11-16-css-and-html-are-built-in/) 了 HTML 和 CSS 支持，正常导入和引用 HTML、CSS 不再需要额外配置。"
+  },
+  {
     "id": "258",
     "date": "2026-11-23T08:56:26+08:00",
     "content": "Node.js 新的 `node:green_threads{:.string}` [提案](https://www.jasnell.me/posts/green-threads-in-node)，「绿色线程」，一个极低内存开销、更加轻量的线程，具备极其轻量的并发模型。\n\n它通过用运行时调度取代 OS 调度，在保持 V8 隔离性的前提下，将海量并发任务的内存开销压缩了一个数量级，为 Node.js 在高密度、计算密集型场景下的应用提供了一种新的可能性。\n\n```ts\nimport { GreenThread } from 'node:green_threads'\n \nconst greenThread = new GreenThread(`\n  onmessage = ({ data }) => postMessage(data * 2)\n`)\n \ngreenThread.on('message', (value) => {\n  console.log(value)  // 42\n  greenThread.terminate()\n})\ngreenThread.postMessage(21)\n```"
