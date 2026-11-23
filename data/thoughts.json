@@ -22,7 +22,7 @@
   {
     "id": "253",
     "date": "2026-11-13T09:14:42+08:00",
-    "content": "[Yuku](https://yuku.fyi/) 被 Prettier 官方采纳，并为其创建了官方插件 `@prettier/plugin-yuku`。之前看到 Yuku 还以为只是一个拿 Zig 练手的实验性学习项目，现在看来还是有几把刷子的。"
+    "content": "[Yuku](https://yuku.fyi/) 被 Prettier 官方采纳，并为其创建了官方插件 `@prettier/plugin-yuku{:.string}`。之前看到 Yuku 还以为只是一个拿 Zig 练手的实验性学习项目，现在看来还是有几把刷子的。"
   },
   {
     "id": "252",
