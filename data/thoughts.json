@@ -1,5 +1,10 @@
 [
   {
+    "id": "261",
+    "date": "2026-11-23T09:48:07+08:00",
+    "content": "vlt 的 registry 从 11 月 18 日开始 [免费公开](https://www.vlt.io/blog/free-public-npm-mirror)，不再需要登录和配置 Key，切换注册表地址即可开始使用。因其在返回的 JSON 里大幅削减了不必要的信息，npm 包的安装速度可以提高 2-3 倍。\n\n```ini\n# .npmrc\nregistry=https://registry.vlt.io/upstream/npm/\n```"
+  },
+  {
     "id": "260",
     "date": "2026-11-23T09:43:08+08:00",
     "content": "npm 新提案 [Package Variants](https://github.com/darcyclarke/rfcs/blob/package-distributions/accepted/0000-package-variants.md)。\n\n让包作者可以使用 `package.json#variants{:.string}` 字段来声明「在什么平台环境下，用哪个预构建的原生二进制包来替代自己」，从而把平台特定二进制的安装，从依赖不可靠的安装脚本或笨重的可选依赖的「变通做法」，升级为包管理器原生支持的一等公民。\n\n```json\n{\n  \"name\": \"esbuild\",\n  \"version\": \"0.25.0\",\n  \"optionalDependencies\": {\n    \"@esbuild/darwin-arm64\": \"0.25.0\",\n    \"@esbuild/win32-x64\": \"0.25.0\"\n  },\n  \"variants\": [\n    {\n      \"os\": [\"darwin\"],\n      \"cpu\": [\"arm64\"],\n      \"package\": \"@esbuild/darwin-arm64@0.25.0\",\n      \"bin\": { \"esbuild\": \"bin/esbuild\" }\n    },\n    {\n      \"os\": [\"win32\"],\n      \"cpu\": [\"x64\"],\n      \"package\": \"@esbuild/win32-x64@0.25.0\",\n      \"bin\": { \"esbuild\": \"esbuild.exe\" }\n    },\n    { \"package\": \"esbuild-wasm@0.25.0\" }\n  ]\n}\n```"
