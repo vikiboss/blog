@@ -170,5 +170,13 @@
     "description": "找到自己真正的心愿之时 心愿就会化作歌曲。",
     "avatar": "https://image.viki.moe/blog/friend/jerry.png",
     "rss": "https://jerryplusy.ink/rss.xml"
+  },
+  {
+    "id": "sky-wt",
+    "name": "SkyWT",
+    "url": "https://skywt.cn/",
+    "description": "白天是大厂打工人，晚上是自由开发者。",
+    "avatar": "https://img.skywt.net/avatar.jpg",
+    "rss": "https://skywt.cn/rss.xml"
   }
 ]
