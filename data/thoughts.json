@@ -1,5 +1,10 @@
 [
   {
+    "id": "262",
+    "date": "2026-11-25T09:05:03+08:00",
+    "content": "图片处理库 [Jimp](https://github.com/jimp-dev/jimp) 从 2.0 起支持处理多帧的 [GIF](https://jimp-dev.github.io/jimp/concepts/formats/#gif) 动图。"
+  },
+  {
     "id": "261",
     "date": "2026-11-23T09:48:07+08:00",
     "content": "[vlt](https://www.vlt.io/) 的 npm 注册表从 18 号开始 [免费公开](https://www.vlt.io/blog/free-public-npm-mirror)，不再需要登录和配置 Key，切换地址即可开始使用。因其在返回的 JSON 里 [大幅削减](https://www.vlt.io/blog/registry-metadata-70-percent-smaller) 了不必要信息，npm 包的安装速度提高了 20%-70%。\n\n```ini\n# .npmrc\nregistry=https://registry.vlt.io/upstream/npm/\n```"
