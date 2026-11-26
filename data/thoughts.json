@@ -1,5 +1,10 @@
 [
   {
+    "id": "263",
+    "date": "2026-11-26T08:43:26+08:00",
+    "content": "Cloudflare Workers 支持 [发送邮件](https://developers.cloudflare.com/changelog/post/2026-11-24-email-sending-workers-free/) 了，但是免费版本只能给自己发。升级到付费版后 [移除了限制](https://developers.cloudflare.com/email-service/platform/pricing/)，每月 3000 额度，超过额度后，每 1000 次计费 $0.35。 \n\n这意味着，如果你有一个 Paid Workers 计划，可以利用它搭建收发邮件的自定义域名邮箱。如果没有，也可以用来做邮件通知，比如订阅、日报、警报等。\n\n```ts\n// index.js in Worker\nexport default {\n\tasync fetch(request, env) {\n    await env.EMAIL.send({\n      from: \"alerts@yourdomain.com\",\n      to: \"oncall@example.com\", // A verified destination address\n      subject: \"Disk usage above 90%\",\n      text: \"Disk usage on db-1 is above 90%.\",\n    });\n  }\n}\n```"
+  },
+  {
     "id": "262",
     "date": "2026-11-25T09:05:03+08:00",
     "content": "图片处理库 [Jimp](https://github.com/jimp-dev/jimp) 从 2.0 起支持处理多帧的 [GIF](https://jimp-dev.github.io/jimp/concepts/formats/#gif) 动图。"
