@@ -7,7 +7,7 @@
   {
     "id": "262",
     "date": "2026-11-25T09:05:03+08:00",
-    "content": "图片处理库 [Jimp](https://github.com/jimp-dev/jimp) 从 2.0 起支持处理多帧的 [GIF](https://jimp-dev.github.io/jimp/concepts/formats/#gif) 动图。"
+    "content": "纯 JavaScript、无原生依赖的图片处理库 [Jimp](https://github.com/jimp-dev/jimp) 从 2.0 起支持处理多帧的 [GIF](https://jimp-dev.github.io/jimp/concepts/formats/#gif) 动图。"
   },
   {
     "id": "261",
